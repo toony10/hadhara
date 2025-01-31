@@ -37,7 +37,14 @@ const topics = [
         link: './education',
         description: 'تعرف على أساليب التعليم في مصر القديمة، ودور المعرفة في تشكيل حضارة عظيمة أثرت في العالم بأسره.'
     },
+    {
+        title: 'التحنيط',
+        image: '/assets/mummification.jpg',
+        link: './mummification',
+        description: 'اكتشف عملية التحنيط وأسرارها، ودورها في الحفاظ على أجساد المصريين القدماء استعدادًا للآخرة.'
+    }
 ];
+
 
 
 export default function AboutUs() {
@@ -61,7 +68,7 @@ export default function AboutUs() {
     useEffect(() => {
         if (!isPopupOpen) return;
 
-        const interval = setInterval(handleNext, 3000); // تغيير كل 3 ثوانٍ
+        const interval = setInterval(handleNext, 6000); // تغيير كل 3 ثوانٍ
         return () => clearInterval(interval); // تنظيف المؤقت عند إغلاق النافذة
     }, [isPopupOpen, currentIndex]);
     return (
