@@ -98,6 +98,7 @@ export default function AboutUs() {
                         <Image
                             width={ 100 }
                             height={ 100 }
+                            sizes='100vw'
                             src="/assets/our-mission.jpg"
                             alt="فريق العمل"
                             className="w-full h-[17rem] object-cover rounded-lg mb-4"
@@ -119,6 +120,7 @@ export default function AboutUs() {
                         <Image
                             width={ 100 }
                             height={ 100 }
+                            sizes='100vw'
                             src="/assets/our-vission.jpg"
                             alt="مهمتنا"
                             className="w-full h-[17rem] object-cover rounded-lg mb-4"
@@ -162,6 +164,7 @@ export default function AboutUs() {
                                     <Image
                                         width={ 100 }
                                         height={ 100 }
+                                        sizes='100vw'
                                         src={ topics[currentIndex].image }
                                         alt={ topics[currentIndex].title }
                                         className="w-full h-full object-cover"
