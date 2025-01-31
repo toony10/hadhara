@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const topics = [
     {
@@ -94,7 +95,9 @@ export default function AboutUs() {
                         transition={ { duration: 0.8 } }
                         viewport={ { once: true } }
                     >
-                        <img
+                        <Image
+                            width={ 100 }
+                            height={ 100 }
                             src="/assets/our-mission.jpg"
                             alt="فريق العمل"
                             className="w-full h-[17rem] object-cover rounded-lg mb-4"
@@ -113,7 +116,9 @@ export default function AboutUs() {
                         transition={ { duration: 0.8, delay: 0.2 } }
                         viewport={ { once: true } }
                     >
-                        <img
+                        <Image
+                            width={ 100 }
+                            height={ 100 }
                             src="/assets/our-vission.jpg"
                             alt="مهمتنا"
                             className="w-full h-[17rem] object-cover rounded-lg mb-4"
@@ -154,7 +159,9 @@ export default function AboutUs() {
                             >
                                 {/* Image */ }
                                 <div className="relative w-full h-full">
-                                    <img
+                                    <Image
+                                        width={ 100 }
+                                        height={ 100 }
                                         src={ topics[currentIndex].image }
                                         alt={ topics[currentIndex].title }
                                         className="w-full h-full object-cover"

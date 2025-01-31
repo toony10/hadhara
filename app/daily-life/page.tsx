@@ -3,7 +3,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Furniture from '../commponents/daily-life/Furniture';
-import { div } from 'framer-motion/client';
 
 const subTopics = [
     { title: 'الترفيه', link: '/daily-life/entertainment' },

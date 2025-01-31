@@ -1,29 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-
-
 
 function HeroSection() {
-    const [isScrolled, setIsScrolled] = useState(false);
-    const [menuOpen, setMenuOpen] = useState<number | null>(null);
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
-    // غلق القائمة عند النقر خارجها
-    const handleCloseMobileMenu = () => {
-        setIsMobileMenuOpen(false);
-    };
-
     return (
         <header>
             {/* Hero Section with Welcome Video */ }
