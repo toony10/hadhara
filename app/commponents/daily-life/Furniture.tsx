@@ -1,7 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ContentBlock from '../custome/ContentBlock'
 
+interface ContentData {
+    title: string;
+    description?: string;
+    listItems?: { title: string; description?: string }[];
+    imageUrls?: string[];
+    imageDescriptions?: string[];
+}
+
 function Furniture() {
+    const [data, setData] = useState<ContentData[]>([]);
+
+    useEffect(() => {
+        fetch("/data/daily-life/furniture.json") // تحميل البيانات من الملف
+            .then((res) => res.json())
+            .then((jsonData) => setData(jsonData));
+    }, []);
     return (
         <div className="min-h-screen py-16">
             <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -97,27 +112,16 @@ function Furniture() {
                             { title: "الغراء", description: "مادة لاصقة قوية استخدمت في تثبيت أجزاء الأثاث." }
                         ] }
                     />
-                    <ContentBlock
-                        title="خامات المعادن والأحجار"
-                        description="استخدم المصريون القدماء معادن وأحجار متعددة في تزيين الأثاث."
-                        listItems={ [
-                            { title: "النحاس", description: "استخدم في الأدوات والتكسية." },
-                            { title: "الذهب والفضة", description: "استخدمت في تزيين الأثاث الملكي." },
-                            { title: "المرمر", description: "استخدم في التطعيم والزينة." }
-                        ] }
-                    />
-                    <ContentBlock
-                        title="أدوات النجارة"
-                        description="طور المصريون أدوات متقدمة للعمل بالخشب، ومنها:"
-                        listItems={ [
-                            { title: "القادوم", description: "استخدم لتشكيل الخشب." },
-                            { title: "البلطة", description: "استُخدمت في قطع الأشجار والخشب." },
-                            { title: "المثقاب", description: "لحفر الثقوب في الأخشاب." },
-                            { title: "الأزميل", description: "استُخدم في النقش والتشكيل." }
-                        ] }
-                        imageUrls={ ["/assets/daily-life/Furniture/furniture5.PNG", "/assets/daily-life/Furniture/furniture8.PNG"] }
-                        imageDescriptions={ ["قواديم", "مطارق خشبيه"] }
-                    />
+                    { data.map((item, index) => (
+                        <ContentBlock
+                            key={ index }
+                            title={ item.title }
+                            description={ item.description }
+                            listItems={ item.listItems }
+                            imageUrls={ item.imageUrls }
+                            imageDescriptions={ item.imageDescriptions }
+                        />
+                    )) }
                     <ContentBlock
                         title="صناعة الأثاث في مصر القديمة"
                         description="تنوعت قطع الأثاث المصري القديم بين الاستخدامات الدنيوية والجنائزية."

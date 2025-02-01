@@ -68,8 +68,8 @@ export default function AboutUs() {
     useEffect(() => {
         if (!isPopupOpen) return;
 
-        const interval = setInterval(handleNext, 6000); // تغيير كل 3 ثوانٍ
-        return () => clearInterval(interval); // تنظيف المؤقت عند إغلاق النافذة
+        const interval = setInterval(handleNext, 6000);
+        return () => clearInterval(interval);
     }, [isPopupOpen, currentIndex]);
     return (
         <section className="py-16 bg-gray-100">
