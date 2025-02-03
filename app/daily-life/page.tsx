@@ -10,7 +10,6 @@ const subTopics = [
     { title: 'الأثاث', link: '/daily-life/Furniture' },
     { title: 'المباني', link: '/daily-life/Buildings' },
     { title: 'الحرف والمهن', link: '/daily-life/crafts' },
-
 ];
 
 const tagVariants = {
@@ -20,42 +19,52 @@ const tagVariants = {
 
 export default function DailyLife() {
     return (
+        <section className="w-full">
+            {/* خلفية تمتد على كامل الشاشة */ }
+            <div
+                className="relative w-full h-screen bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center"
+                style={ { backgroundImage: "url('/assets/topic-headings/daily-life.png')" } }
+            >
+                {/* تأثير التعتيم للوضوح */ }
+                <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
-        <section className="py-16 ">
-            <div className='bg-gray-50 p-10 my-14'>
-                {/* Header */ }
-                <div className="container mx-auto px-6 text-center mt-20 ">
-                    <h1 className="text-4xl font-bold text-gray-800 mb-4">الحياة اليومية</h1>
-                    <p className="text-lg text-gray-600 mb-12">
-                        انطلق في رحلة لاكتشاف أسرار الحياة اليومية وتفاصيلها المثيرة في مصر القديمة                </p>
+                {/* المحتوى فوق الخلفية */ }
+                <div className="relative z-10 text-center text-white px-6">
+                    <h1 className="text-6xl font-extrabold drop-shadow-lg mb-6">الحياة اليومية</h1>
+                    <p className="text-xl max-w-2xl mx-auto">
+                        انطلق في رحلة لاكتشاف أسرار الحياة اليومية وتفاصيلها المثيرة في مصر القديمة
+                    </p>
+
+                    {/* العناوين الفرعية داخل الهيدر مع تأثير الحركة */ }
+                    <motion.div
+                        className="flex flex-wrap justify-center gap-4 mt-8"
+                        initial="hidden"
+                        animate="visible"
+                        variants={ {
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
+                        } }
+                    >
+                        { subTopics.map((topic, index) => (
+                            <motion.a
+                                key={ index }
+                                href={ topic.link }
+                                className="px-6 py-3 bg-yellow-500 text-white rounded-full shadow-lg text-lg font-semibold 
+                                    hover:bg-yellow-600 hover:scale-110 hover:rotate-2 hover:shadow-xl transition-all duration-300 ease-in-out"
+                                variants={ tagVariants }
+                                whileHover={ { scale: 1.1 } }
+                                whileTap={ { scale: 0.95 } }
+                            >
+                                { topic.title }
+                            </motion.a>
+                        )) }
+                    </motion.div>
                 </div>
-
-                {/* Subtopics Tags */ }
-                <motion.div
-                    className="container mx-auto px-6 flex flex-wrap justify-center gap-4"
-                    initial="hidden"
-                    animate="visible"
-                    variants={ {
-                        hidden: { opacity: 0 },
-                        visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
-                    } }
-                >
-                    { subTopics.map((topic, index) => (
-                        <motion.a
-                            key={ index }
-                            href={ topic.link }
-                            className="px-4 py-2 bg-yellow-500 text-white rounded-full shadow-md text-sm font-semibold hover:bg-yellow-600 transition-all cursor-pointer"
-                            variants={ tagVariants }
-                            whileHover={ { scale: 1.1 } }
-                            whileTap={ { scale: 0.95 } }
-                        >
-                            { topic.title }
-                        </motion.a>
-                    )) }
-                </motion.div>
             </div>
-            <Furniture />
+            <div className='w-full'>
+                {/* محتوى صفحة الأثاث */ }
+                <Furniture />
+            </div>
         </section>
-
     );
 }

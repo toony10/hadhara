@@ -32,14 +32,14 @@ function ImageViewer({ imageUrl, caption }: ImageViewerProps) {
             <AnimatePresence>
                 { isOpen && (
                     <motion.div
-                        className="fixed inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center z-50 p-4"
+                        className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4 overflow-hidden"
                         initial={ { opacity: 0 } }
                         animate={ { opacity: 1 } }
                         exit={ { opacity: 0 } }
                         onClick={ () => setIsOpen(false) }
                     >
                         <motion.div
-                            className="relative max-w-full max-h-full"
+                            className="relative max-w-screen-lg max-h-screen-lg overflow-hidden"
                             initial={ { scale: 0.5, opacity: 0 } }
                             animate={ { scale: 1, opacity: 1 } }
                             exit={ { scale: 0.5, opacity: 0 } }
@@ -50,11 +50,11 @@ function ImageViewer({ imageUrl, caption }: ImageViewerProps) {
                                 alt={ caption || "صورة مكبرة" }
                                 width={ 1200 }
                                 height={ 800 }
-                                className="rounded-lg shadow-lg"
+                                className="rounded-lg shadow-lg object-contain max-w-full max-h-full"
                             />
                             {/* عرض التوضيح أسفل الصورة عند التكبير */ }
                             { caption && (
-                                <p className="text-white text-lg mt-4 text-center bg-black bg-opacity-50 px-4 py-2 rounded">
+                                <p className="text-white text-lg mt-4 text-center">
                                     { caption }
                                 </p>
                             ) }

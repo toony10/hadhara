@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ImageViewer from "./ImageViewer"; // استيراد مكون عرض الصور
+import ImageViewer from "./ImageViewer";
 
 interface ContentBlockProps {
     title: string;
@@ -16,14 +16,16 @@ function ContentBlock({ title, description, listItems, imageUrls, imageDescripti
 
     return (
         <motion.div
-            className={ `flex flex-col lg:flex-row items-center gap-8 my-10 ${reverse ? "lg:flex-row-reverse" : ""}` }
+            className={ `w-full flex flex-col lg:flex-row items-center gap-12 py-16 px-10 my-0
+                ${reverse ? "lg:flex-row-reverse" : ""} 
+                odd:bg-gray-50 even:bg-white transition-all duration-500` }
             initial={ { opacity: 0, y: 50 } }
             whileInView={ { opacity: 1, y: 0 } }
-            transition={ { duration: 0.8 } }
+            transition={ { duration: 0.8, ease: "easeOut" } }
             viewport={ { once: true } }
         >
             {/* القسم النصي */ }
-            <div className={ `text-right ${imageUrls ? "lg:w-1/2" : "w-full"} ` } >
+            <div className={ `text-right ${imageUrls ? "lg:w-1/2" : "w-full"} ` }>
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">{ title }</h2>
                 { description && <p className="text-lg text-gray-700 mb-4">{ description }</p> }
 
@@ -32,7 +34,8 @@ function ContentBlock({ title, description, listItems, imageUrls, imageDescripti
                         { listItems.map((item, index) => (
                             <li key={ index } className="flex space-x-1 justify-end">
                                 <p className="text-gray-700">{ item.description }</p>
-                                <p className="font-semibold text-gray-900">: { item.title }</p>
+                                <span>:</span>
+                                <p className="font-semibold text-gray-900">{ item.title }</p>
                             </li>
                         )) }
                     </ul>
