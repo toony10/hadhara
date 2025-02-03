@@ -257,14 +257,14 @@
   "imageUrls": [
       "/assets/daily-life/Furniture/قواديم.PNG",
       "/assets/daily-life/Furniture/مطارق خشبيه ومنشار.PNG",
-    "/assets/daily-life/Furniture/2قواديم.png",
-    "/assets/daily-life/Furniture/صقل سرير.png",
-    "/assets/daily-life/Furniture/تشكيل بالقادوم.png"
+    "/assets/daily-life/Furniture/2قواديم.PNG",
+    "/assets/daily-life/Furniture/صقل سرير.PNG",
+    "/assets/daily-life/Furniture/تشكيل بالقادوم.PNG"
   ],
   "imageDescriptions": [
       "قواديم",
     "مطارق خشبيه ومنشار",
-    "2قواديم",
+    "قواديم",
     "صقل سرير",
     "تشكيل بالقادوم"
   ]
