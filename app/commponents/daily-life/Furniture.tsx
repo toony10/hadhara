@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ContentBlock from '../custome/ContentBlock'
-
+import TopicHeader from '../custome/TopicHeader';
 interface ContentData {
     title: string;
     description?: string;
@@ -19,21 +19,7 @@ function Furniture() {
     }, []);
     return (
         <div className="min-h-screen py-16">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                {/* العنوان */ }
-                <h1 className="text-4xl font-bold text-center text-gray-900 mb-8">
-                    الأثاث في مصر القديمة
-                </h1>
-                {/* المقدمة */ }
-                <div className="text-center">
-                    <p className="text-gray-500 text-lg font-sans">
-                        الأثاث في مصر القديمة كان له مكانة متميزة، حيث كان مرتبطًا بشكل وثيق بحياة المصريين الدينية والدنيوية.
-                        فن النجارة في مصر القديمة تأثر بالفنون الأخرى، كما يظهر من الأثاث والأدوات الخشبية المتبقية، سواء كانت حقيقية أو مصورة أو مجسمة.
-                        هذا يعكس مهارة النجار المصري وقدرته الفنية والصناعية، حيث تتميز القطع الخشبية بالدقة والأناقة والجمال، مما يرفعها إلى مستوى فن راقٍ.
-                    </p>
-                </div>
-            </div>
-            <hr className="border-2 rounded-md mt-7" />
+            <TopicHeader title="الأثاث في مصر القديمة" description="الأثاث في مصر القديمة كان له مكانة متميزة، حيث كان مرتبطًا بشكل وثيق بحياة المصريين الدينية والدنيوية. فن النجارة في مصر القديمة تأثر بالفنون الأخرى، كما يظهر من الأثاث والأدوات الخشبية المتبقية، سواء كانت حقيقية أو مصورة أو مجسمة. هذا يعكس مهارة النجار المصري وقدرته الفنية والصناعية، حيث تتميز القطع الخشبية بالدقة والأناقة والجمال، مما يرفعها إلى مستوى فن راقٍ." />
             <div>
                 { data.map((item, index) => (
                     <ContentBlock
