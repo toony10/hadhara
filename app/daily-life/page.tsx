@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
 import Furniture from '../commponents/daily-life/Furniture';
 import SubjectHeader from '../commponents/custome/SubjectHeader';
 
