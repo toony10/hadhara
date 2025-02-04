@@ -17,7 +17,7 @@ const subTopics = [
 
 export default function DailyLife() {
     return (
-        <section className="w-full">
+        <div className="w-full">
             <SubjectHeader title="الحياة اليومية" description="انطلق في رحلة لاكتشاف أسرار الحياة اليومية وتفاصيلها المثيرة في مصر القديمة" backgroundImage="/assets/topic-headings/daily-life.png" subTopics={
                 [
                     { title: 'الترفيه', link: '/daily-life/entertainment' },
@@ -27,10 +27,10 @@ export default function DailyLife() {
                     { title: 'الحرف والمهن', link: '/daily-life/crafts' },
                 ]
             } />
-            <div className='w-full'>
+            <section className='w-full'>
                 {/* الأثاث */ }
                 <Furniture />
-            </div>
-        </section>
+            </section>
+        </div>
     );
 }

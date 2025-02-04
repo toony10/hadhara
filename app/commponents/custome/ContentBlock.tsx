@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import ImageViewer from "./ImageViewer";
 
 interface ContentBlockProps {
-    title: string;
+    title?: string;
     description?: string;
     listItems?: { title: string; description?: string }[];
     imageUrls?: string[];
