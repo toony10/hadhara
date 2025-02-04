@@ -4,14 +4,6 @@ import React from 'react';
 import Furniture from '../commponents/daily-life/Furniture';
 import SubjectHeader from '../commponents/custome/SubjectHeader';
 
-const subTopics = [
-    { title: 'الترفيه', link: '/daily-life/entertainment' },
-    { title: 'الملابس والزينة', link: '/daily-life/clothing' },
-    { title: 'الأثاث', link: '/daily-life/Furniture' },
-    { title: 'المباني', link: '/daily-life/Buildings' },
-    { title: 'الحرف والمهن', link: '/daily-life/crafts' },
-];
-
 
 
 export default function DailyLife() {
