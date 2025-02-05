@@ -4,6 +4,7 @@ import React from 'react'
 import SubjectHeader from '../commponents/custome/SubjectHeader';
 import Holidays from '../commponents/worship/Holidays';
 import Temples from '../commponents/worship/Temples';
+import Gods from '../commponents/worship/Gods';
 export default function Worship() {
     return (
         <div className='w-full'>
@@ -18,8 +19,9 @@ export default function Worship() {
                 ]
             } />
             <section className='w-full'>
-                <Holidays />
+                <Gods />
                 <Temples />
+                <Holidays />
             </section>
         </div>
     )
