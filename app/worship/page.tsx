@@ -7,6 +7,7 @@ import Temples from '../commponents/worship/Temples';
 import Gods from '../commponents/worship/Gods';
 import Talismans from '../commponents/worship/Talismans';
 import Books from '../commponents/worship/Books';
+import Myths from '../commponents/worship/Myths';
 export default function Worship() {
     return (
         <div className='w-full'>
@@ -26,6 +27,7 @@ export default function Worship() {
                 <Holidays />
                 <Talismans />
                 <Books />
+                <Myths />
             </section>
         </div>
     )
