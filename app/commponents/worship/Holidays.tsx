@@ -15,21 +15,22 @@ function Holidays() {
     const references = [
         {
             title: "الأعياد في مصر القديمة - د. عبد الحليم نور الدين",
-            link: "https://example.com/egyptian-festivals-abdelhalim"
+            link: "https://example.com/ancient-egypt-festivals"
         },
         {
-            title: "الأعياد في مصر القديمة - د. مي إبراهيم ذكي",
-            link: "https://example.com/egyptian-festivals-mai"
+            title: "English Readings in Egyptology - Prof. Dr. Wazir W. Abdel-Wahab",
+            link: "https://example.com/english-readings-egyptology"
         },
         {
-            title: "موسوعة مصر القديمة - د. سليم حسن",
-            link: "https://example.com/ancient-egypt-encyclopedia"
+            title: "موسوعة مصر القديمة (الجزء الثالث) - د. سليم حسن",
+            link: "https://example.com/ancient-egypt-encyclopedia-vol3"
         },
         {
             title: "حضارة مصر القديمة - د. وزير وزير عبد الوهاب",
             link: "https://example.com/ancient-egypt-civilization"
         }
     ];
+
 
     useEffect(() => {
         fetch("/data/Worship/holidays.json") // تحميل البيانات من الملف
