@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Furniture from '../commponents/daily-life/Furniture';
+import Buildings from '../commponents/daily-life/Buildings';
 import SubjectHeader from '../commponents/custome/SubjectHeader';
 
 
@@ -19,8 +20,8 @@ export default function DailyLife() {
                 ]
             } />
             <section className='w-full'>
-                {/* الأثاث */ }
                 <Furniture />
+                <Buildings />
             </section>
         </div>
     );
