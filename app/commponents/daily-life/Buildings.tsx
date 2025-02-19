@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import TopicHeader from '../custome/TopicHeader';
 import ContentBlock from '../custome/ContentBlock'
-import ReferencesSection from '../custome/ReferencesSection';
+// import ReferencesSection from '../custome/ReferencesSection';
 
 interface ContentData {
     title: string;
