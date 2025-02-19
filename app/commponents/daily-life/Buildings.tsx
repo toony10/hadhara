@@ -14,8 +14,7 @@ interface ContentData {
 function Furniture() {
     const [data, setData] = useState<ContentData[]>([]);
 
-    // const references = [
-    //     {
+
     //         title: "أشغال النجارة في مصر القديمة (نجارة الأثاث والعمارة اللوحات) - د. محمد راشد حماد",
     //         link: "https://example.com/woodwork-1970"
     //     },

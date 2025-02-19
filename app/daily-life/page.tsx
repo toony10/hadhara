@@ -4,6 +4,7 @@ import React from 'react';
 import Furniture from '../commponents/daily-life/Furniture';
 import Buildings from '../commponents/daily-life/Buildings';
 import SubjectHeader from '../commponents/custome/SubjectHeader';
+import Entertainment from '../commponents/daily-life/Entertainment';
 
 
 
@@ -22,6 +23,7 @@ export default function DailyLife() {
             <section className='w-full'>
                 <Furniture />
                 <Buildings />
+                <Entertainment />
             </section>
         </div>
     );
