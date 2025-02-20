@@ -13,7 +13,7 @@ interface ContentData {
     imageDescriptions?: string[];
 }
 
-function furniture() {
+function Furniture() {
     const [data, setData] = useState<ContentData[]>([]);
 
     useEffect(() => {
@@ -46,4 +46,4 @@ function furniture() {
     );
 };
 
-export default furniture;
+export default Furniture;
