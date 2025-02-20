@@ -14,16 +14,6 @@ interface ContentData {
 function Furniture() {
     const [data, setData] = useState<ContentData[]>([]);
 
-
-    //         title: "أشغال النجارة في مصر القديمة (نجارة الأثاث والعمارة اللوحات) - د. محمد راشد حماد",
-    //         link: "https://example.com/woodwork-1970"
-    //     },
-    //     {
-    //         title: "نجارة الأثاث في مصر القديمة - د. محمد راشد حماد",
-    //         link: "https://example.com/furniture-2009"
-    //     }
-    // ];
-
     useEffect(() => {
         fetch("/data/daily-life/Buildings.json")
             .then((res) => res.json())
@@ -48,7 +38,6 @@ function Furniture() {
                 )) }
             </div>
             {/* <ReferencesSection references={ references } /> */ }
-            {/* خط فاصل أسفل القسم */ }
             <hr className="mt-10 border-t-2 border-dotted border-stone-300 w-1/2 mx-auto" />
         </div>
     )

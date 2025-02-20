@@ -1,9 +1,11 @@
 'use client';
 
 import React from 'react';
+import SubjectHeader from '../commponents/custome/SubjectHeader';
+
+// Components
 import Furniture from '../commponents/daily-life/Furniture';
 import Buildings from '../commponents/daily-life/Buildings';
-import SubjectHeader from '../commponents/custome/SubjectHeader';
 import Entertainment from '../commponents/daily-life/Entertainment';
 
 
