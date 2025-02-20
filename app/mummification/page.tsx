@@ -12,7 +12,7 @@ function Mummification() {
     return (
         <div>
             <div className="w-full">
-                <SubjectHeader title="التحنيط" description="انغمس في أسرار التحنيط المثيرة واكتشف تفاصيلها الغامضة في مصر القديمة" backgroundImage="/assets/topic-headings/mummification.PNG" subTopics={
+                <SubjectHeader title="التحنيط" description="انغمس في أسرار التحنيط المثيرة واكتشف تفاصيلها الغامضة في مصر القديمة" backgroundImage="/assets/topic-headings/mummification.png" subTopics={
                     [
                         { title: 'الهدف منه', link: '/mummification/purpose' },
                         { title: 'المواد المستخدمه', link: '/mummification/materials' },
