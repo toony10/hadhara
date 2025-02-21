@@ -13,11 +13,11 @@ interface ContentData {
     imageDescriptions?: string[];
 }
 
-function Museum() {
+function Rituals() {
     const [data, setData] = useState<ContentData[]>([]);
 
     useEffect(() => {
-        fetch("/data/Mummification/Museum.json")
+        fetch("/data/Mummification/Rituals.json")
             .then((res) => res.json())
             .then((jsonData) => setData(jsonData));
     }, []);
@@ -25,8 +25,8 @@ function Museum() {
     return (
         <div className="min-h-screen py-16">
             <TopicHeader
-                title="متحف التحنيط في الأقصر"
-                description="يعد متحف التحنيط في الأقصر من المتاحف الفريدة عالميًا، حيث يسلط الضوء على تقنيات التحنيط التي استخدمها المصريون القدماء للحفاظ على أجساد البشر والحيوانات. يضم المتحف مجموعة مميزة من المومياوات والأدوات المستخدمة في عملية التحنيط، بالإضافة إلى برديات ونصوص تشرح أسرار هذا الفن المقدس في الحضارة المصرية القديمة."
+                title="الطقوس الجنائزية في مصر القديمة"
+                description="لعبت الطقوس الجنائزية دورًا محوريًا في العقيدة المصرية القديمة، حيث كانت تهدف إلى ضمان انتقال المتوفى إلى الحياة الآخرة بسلام. تضمنت هذه الطقوس موكب الجنازة، الطقوس الدينية، وطقس فتح الفم، الذي كان يُعتقد أنه يعيد للميت قدرته على الأكل والشرب والتحدث في العالم الآخر."
             />
             <div>
                 { data.map((item, index) => (
@@ -46,4 +46,4 @@ function Museum() {
     );
 };
 
-export default Museum;
+export default Rituals;

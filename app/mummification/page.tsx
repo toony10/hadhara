@@ -8,6 +8,11 @@ import Purpose from '../commponents/mummification/Purpose';
 import Materials from '../commponents/mummification/Materials';
 import Furniture from '../commponents/mummification/Furniture';
 import Steps from '../commponents/mummification/Steps';
+import Gods from '../commponents/mummification/Gods';
+import MedicineMagic from '../commponents/mummification/MedicineMagic';
+import Animal from '../commponents/mummification/Animal';
+import Museum from '../commponents/mummification/Museum';
+import Rituals from '../commponents/mummification/Rituals';
 
 function Mummification() {
     return (
@@ -22,7 +27,7 @@ function Mummification() {
                         { title: 'الطرق والخطوات الأساسيه', link: '/mummification/steps' },
                         { title: 'الألهه المرتبطه بالتحنيط', link: '/mummification/gods' },
                         { title: 'دور الطب والسحر', link: '/mummification/medicine-magic' },
-                        { title: 'المومياء واللعنه والعلم', link: '/mummification/curse-science' },
+                        { title: 'الطقوس الجنائزية', link: '/mummification/Rituals' },
                         { title: 'تحنيط الحيوان', link: '/mummification/animal' },
                         { title: 'متحف التحنيط', link: '/mummification/museum' },
                     ]
@@ -32,6 +37,11 @@ function Mummification() {
                     <Materials />
                     <Furniture />
                     <Steps />
+                    <Gods />
+                    <Rituals />
+                    <MedicineMagic />
+                    <Animal />
+                    <Museum />
                 </section>
             </div>
         </div>

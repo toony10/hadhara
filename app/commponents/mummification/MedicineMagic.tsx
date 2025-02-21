@@ -13,11 +13,11 @@ interface ContentData {
     imageDescriptions?: string[];
 }
 
-function Museum() {
+function MedicineMagic() {
     const [data, setData] = useState<ContentData[]>([]);
 
     useEffect(() => {
-        fetch("/data/Mummification/Museum.json")
+        fetch("/data/Mummification/MedicineMagic.json")
             .then((res) => res.json())
             .then((jsonData) => setData(jsonData));
     }, []);
@@ -25,8 +25,8 @@ function Museum() {
     return (
         <div className="min-h-screen py-16">
             <TopicHeader
-                title="متحف التحنيط في الأقصر"
-                description="يعد متحف التحنيط في الأقصر من المتاحف الفريدة عالميًا، حيث يسلط الضوء على تقنيات التحنيط التي استخدمها المصريون القدماء للحفاظ على أجساد البشر والحيوانات. يضم المتحف مجموعة مميزة من المومياوات والأدوات المستخدمة في عملية التحنيط، بالإضافة إلى برديات ونصوص تشرح أسرار هذا الفن المقدس في الحضارة المصرية القديمة."
+                title="دور الطب والسحر في التحنيط"
+                description="لعب كل من الطب والسحر دورًا رئيسيًا في عملية التحنيط في مصر القديمة. ساهمت المعرفة الطبية، المستمدة من دراسة الجسد أثناء التحنيط، في تطوير العلوم الطبية والجراحية، بينما كان السحر جزءًا لا يتجزأ من الطقوس، حيث استخدمت التعاويذ والرموز السحرية لضمان حماية المتوفى في الحياة الآخرة."
             />
             <div>
                 { data.map((item, index) => (
@@ -46,4 +46,4 @@ function Museum() {
     );
 };
 
-export default Museum;
+export default MedicineMagic;
