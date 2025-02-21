@@ -7,6 +7,7 @@ import SubjectHeader from '../commponents/custome/SubjectHeader';
 import Purpose from '../commponents/mummification/Purpose';
 import Materials from '../commponents/mummification/Materials';
 import Furniture from '../commponents/mummification/Furniture';
+import Steps from '../commponents/mummification/Steps';
 
 function Mummification() {
     return (
@@ -30,6 +31,7 @@ function Mummification() {
                     <Purpose />
                     <Materials />
                     <Furniture />
+                    <Steps />
                 </section>
             </div>
         </div>
