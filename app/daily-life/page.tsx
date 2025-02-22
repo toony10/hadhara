@@ -24,9 +24,9 @@ export default function DailyLife() {
                 ]
             } />
             <section className='w-full'>
-                {/* <Furniture />
+                <Furniture />
                 <Buildings />
-                <Entertainment /> */}
+                <Entertainment />
                 <Works />
             </section>
         </div>
