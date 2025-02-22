@@ -6,7 +6,6 @@ export default function Home() {
     <div className="h-[100rem]">
       <HeroSection />
       <AboutUs />
-
     </div>
   );
 }

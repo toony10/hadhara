@@ -1,10 +1,9 @@
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 import React from 'react';
 
 interface SubTopic {
     title: string;
-    link: string;
+    onClick: () => void; // نضيف دالة تعمل عند النقر
 }
 
 interface SubjectHeaderProps {
@@ -29,8 +28,8 @@ const SubjectHeader: React.FC<SubjectHeaderProps> = ({ title, description, backg
 
             <div className="relative z-10 text-center text-white px-6">
                 <h1 className="text-6xl font-extrabold drop-shadow-lg mb-6">{ title }</h1>
-                <p className="text-xl max-w-2xl mx-auto">{ description }
-                </p>
+                <p className="text-xl max-w-2xl mx-auto">{ description }</p>
+
                 <motion.div
                     className="flex flex-wrap justify-center gap-4 mt-8"
                     initial="hidden"
@@ -41,16 +40,17 @@ const SubjectHeader: React.FC<SubjectHeaderProps> = ({ title, description, backg
                     } }
                 >
                     { subTopics.map((topic, index) => (
-                        <motion.div
+                        <motion.button
                             key={ index }
                             className="px-6 py-3 bg-yellow-500 text-white rounded-full shadow-lg text-lg font-semibold 
                                     hover:bg-yellow-600 hover:scale-110 hover:rotate-2 hover:shadow-xl transition-all duration-300 ease-in-out"
                             variants={ tagVariants }
                             whileHover={ { scale: 1.1 } }
                             whileTap={ { scale: 0.95 } }
+                            onClick={ topic.onClick } // استخدام الدالة عند النقر
                         >
-                            <Link href={ topic.link }>{ topic.title }</Link>
-                        </motion.div>
+                            { topic.title }
+                        </motion.button>
                     )) }
                 </motion.div>
             </div>
