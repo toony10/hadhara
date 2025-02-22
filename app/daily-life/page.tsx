@@ -7,6 +7,7 @@ import SubjectHeader from '../commponents/custome/SubjectHeader';
 import Furniture from '../commponents/daily-life/Furniture';
 import Buildings from '../commponents/daily-life/Buildings';
 import Entertainment from '../commponents/daily-life/Entertainment';
+import Works from '../commponents/daily-life/Works';
 
 
 
@@ -23,9 +24,10 @@ export default function DailyLife() {
                 ]
             } />
             <section className='w-full'>
-                <Furniture />
+                {/* <Furniture />
                 <Buildings />
-                <Entertainment />
+                <Entertainment /> */}
+                <Works />
             </section>
         </div>
     );
