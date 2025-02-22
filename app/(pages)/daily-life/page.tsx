@@ -1,14 +1,14 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
-import SubjectHeader from '../commponents/custome/SubjectHeader';
+import SubjectHeader from '../../commponents/custome/SubjectHeader';
 
 // المكونات الفرعية
-import Furniture from '../commponents/daily-life/Furniture';
-import Buildings from '../commponents/daily-life/Buildings';
-import Entertainment from '../commponents/daily-life/Entertainment';
-import Works from '../commponents/daily-life/Works';
-import Clothes from '../commponents/daily-life/Clothes';
+import Furniture from '../../commponents/daily-life/Furniture';
+import Buildings from '../../commponents/daily-life/Buildings';
+import Entertainment from '../../commponents/daily-life/Entertainment';
+import Works from '../../commponents/daily-life/Works';
+import Clothes from '../../commponents/daily-life/Clothes';
 
 import { motion } from 'framer-motion';
 import { FaArrowUp, FaArrowLeft, FaArrowRight } from 'react-icons/fa';

@@ -1,38 +1,26 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
-import SubjectHeader from '../commponents/custome/SubjectHeader';
+import SubjectHeader from '../../commponents/custome/SubjectHeader';
 
-// المكونات الفرعية
-import Purpose from '../commponents/mummification/Purpose';
-import Materials from '../commponents/mummification/Materials';
-import Furniture from '../commponents/mummification/Furniture';
-import Steps from '../commponents/mummification/Steps';
-import Gods from '../commponents/mummification/Gods';
-import MedicineMagic from '../commponents/mummification/MedicineMagic';
-import Animal from '../commponents/mummification/Animal';
-import Museum from '../commponents/mummification/Museum';
-import Rituals from '../commponents/mummification/Rituals';
-import Development from '../commponents/mummification/Development';
+// المكونات الفرعية لمواضيع الحياة الاجتماعية
+import Family from '../../commponents/social-life/Family';
+import SocialClasses from '../../commponents/social-life/SocialClasses';
+import Women from '../../commponents/social-life/Women';
+import Traditions from '../../commponents/social-life/Traditions';
 
 import { motion } from 'framer-motion';
 import { FaArrowUp, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 // قائمة المواضيع الفرعية مع مكوناتها
 const subTopics = [
-    { title: 'الهدف منه', component: <Purpose /> },
-    { title: 'المواد المستخدمه', component: <Materials /> },
-    { title: 'الأثاث الجنائزي', component: <Furniture /> },
-    { title: 'تطور التحنيط', component: <Development /> },
-    { title: 'الطرق والخطوات الأساسيه', component: <Steps /> },
-    { title: 'الألهه المرتبطه بالتحنيط', component: <Gods /> },
-    { title: 'دور الطب والسحر', component: <MedicineMagic /> },
-    { title: 'الطقوس الجنائزية', component: <Rituals /> },
-    { title: 'تحنيط الحيوان', component: <Animal /> },
-    { title: 'متحف التحنيط', component: <Museum /> }
+    { title: 'الأسرة', component: <Family /> },
+    { title: 'الطبقات الاجتماعية', component: <SocialClasses /> },
+    { title: 'المرأة', component: <Women /> },
+    { title: 'العادات والتقاليد', component: <Traditions /> }
 ];
 
-export default function Mummification() {
+export default function SocialLife() {
     const [activeIndex, setActiveIndex] = useState(0);
     const sectionRef = useRef<HTMLDivElement>(null);
     const [showScrollButton, setShowScrollButton] = useState(false);
@@ -111,9 +99,9 @@ export default function Mummification() {
         <div className='w-full'>
             {/* الهيدر مع الأزرار للتنقل بين المواضيع */ }
             <SubjectHeader
-                title="التحنيط"
-                description="انغمس في أسرار التحنيط المثيرة واكتشف تفاصيلها الغامضة في مصر القديمة"
-                backgroundImage="/assets/topic-headings/mummification.png"
+                title="الحياة الاجتماعية"
+                description="اغمر نفسك في تفاصيل المجتمع المصري القديم، حيث شكلت الأسرة، والعادات، والتقاليد نسيج الحياة اليومية، وخلقت توازنًا فريدًا بين الأدوار الاجتماعية والتقاليد العريقة"
+                backgroundImage="/assets/topic-headings/social-life.png"
                 subTopics={ subTopics.map((topic, index) => ({
                     title: topic.title,
                     onClick: () => handleTopicChange(index)

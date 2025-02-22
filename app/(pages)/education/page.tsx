@@ -1,30 +1,28 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
-import SubjectHeader from '../commponents/custome/SubjectHeader';
+import SubjectHeader from '../../commponents/custome/SubjectHeader';
 
-// المكونات الفرعية
-import Holidays from '../commponents/worship/Holidays';
-import Temples from '../commponents/worship/Temples';
-import Gods from '../commponents/worship/Gods';
-import Talismans from '../commponents/worship/Talismans';
-import Books from '../commponents/worship/Books';
-import Myths from '../commponents/worship/Myths';
+// المكونات الفرعية لمواضيع التعليم
+import WritingLanguage from '../../commponents/education/WritingLanguage';
+import Literature from '../../commponents/education/Literature';
+import Mathematics from '../../commponents/education/Mathematics';
+import Astronomy from '../../commponents/education/Astronomy';
+import MedicineHealing from '../../commponents/education/MedicineHealing';
 
 import { motion } from 'framer-motion';
 import { FaArrowUp, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 // قائمة المواضيع الفرعية مع مكوناتها
 const subTopics = [
-    { title: 'الألهه', component: <Gods /> },
-    { title: 'الأساطير', component: <Myths /> },
-    { title: 'الأعياد', component: <Holidays /> },
-    { title: 'المعابد', component: <Temples /> },
-    { title: 'التمائم', component: <Talismans /> },
-    { title: 'الكتب الدينية', component: <Books /> }
+    { title: 'الكتابة واللغة', component: <WritingLanguage /> },
+    { title: 'الأدب', component: <Literature /> },
+    { title: 'الرياضيات', component: <Mathematics /> },
+    { title: 'الفلك', component: <Astronomy /> },
+    { title: 'الطب والعلاج', component: <MedicineHealing /> }
 ];
 
-export default function Worship() {
+export default function Education() {
     const [activeIndex, setActiveIndex] = useState(0);
     const sectionRef = useRef<HTMLDivElement>(null);
     const [showScrollButton, setShowScrollButton] = useState(false);
@@ -103,9 +101,9 @@ export default function Worship() {
         <div className='w-full'>
             {/* الهيدر مع الأزرار للتنقل بين المواضيع */ }
             <SubjectHeader
-                title="الحياة الدينية"
-                description="اغمر نفسك في عالم الأسرار المقدسة عند الفراعنة"
-                backgroundImage="/assets/topic-headings/Worship.png"
+                title="التعليم"
+                description="استكشف أسرار المعرفة عند الفراعنة، حيث أضاء العلم عصورًا من الإبداع والإلهام"
+                backgroundImage="/assets/topic-headings/education.png"
                 subTopics={ subTopics.map((topic, index) => ({
                     title: topic.title,
                     onClick: () => handleTopicChange(index)
