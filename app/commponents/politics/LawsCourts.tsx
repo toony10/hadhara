@@ -25,8 +25,9 @@ function LawsCourts() {
         <div>
             <TopicHeader
                 title="القوانين والمحاكم"
-                description=""
+                description="نظام قانوني متكامل حكم مصر القديمة، حيث اعتمد على مبادئ العدالة الإلهية ماعت، وتم تطبيقه من خلال المحاكم الملكية والدينية لضمان تحقيق العدل والنظام في المجتمع."
             />
+
             <div>
                 { data.map((item, index) => (
                     <ContentBlock
