@@ -11,41 +11,45 @@ const topics = [
         title: 'الحياه اليوميه',
         image: '/assets/daily-life.jpg',
         link: './daily-life',
-        description: 'استكشف تفاصيل الحياة اليومية في مصر القديمة، بدءًا من الزراعة والعمل والحرف، وصولًا إلى الملابس والزينات وأشكال الترفيه المتنوعة.'
+        description:
+            'استكشف تفاصيل الحياة اليومية في مصر القديمة، بدءًا من الزراعة والعمل والحرف، وصولًا إلى الملابس والزينات وأشكال الترفيه المتنوعة.',
     },
     {
         title: 'العباده',
         image: '/assets/Worship.png',
         link: './worship',
-        description: 'تعرف على عالم الآلهة والأساطير، واكتشف الأعياد الدينية، المعابد والكهنة، إضافة إلى التمائم والكتب الدينية التي حملت أسرار الروحانية.'
+        description:
+            'تعرف على عالم الآلهة والأساطير، واكتشف الأعياد الدينية، المعابد والكهنة، إضافة إلى التمائم والكتب الدينية التي حملت أسرار الروحانية.',
     },
     {
         title: 'الحياه السياسيه',
         image: '/assets/politics.jpg',
         link: './politics',
-        description: 'اكتشف الدور المحوري للملك، وتعرف على الجيش والحروب، والقوانين والمحاكم التي ساهمت في تنظيم المجتمع المصري القديم.'
+        description:
+            'اكتشف الدور المحوري للملك، وتعرف على الجيش والحروب، والقوانين والمحاكم التي ساهمت في تنظيم المجتمع المصري القديم.',
     },
     {
         title: 'الحياه الأجتماعيه',
         image: '/assets/social-life.jpg',
         link: './social-life',
-        description: 'تعرف على الأسرة المصرية، الطبقات الاجتماعية، دور المرأة، والعادات والتقاليد التي ميزت الحياة الاجتماعية في مصر القديمة.'
+        description:
+            'تعرف على الأسرة المصرية، الطبقات الاجتماعية، دور المرأة، والعادات والتقاليد التي ميزت الحياة الاجتماعية في مصر القديمة.',
     },
     {
         title: 'التعليم',
         image: '/assets/education.png',
         link: './education',
-        description: 'تعرف على أساليب التعليم في مصر القديمة، ودور المعرفة في تشكيل حضارة عظيمة أثرت في العالم بأسره.'
+        description:
+            'تعرف على أساليب التعليم في مصر القديمة، ودور المعرفة في تشكيل حضارة عظيمة أثرت في العالم بأسره.',
     },
     {
         title: 'التحنيط',
         image: '/assets/mummification.jpg',
         link: './mummification',
-        description: 'اكتشف عملية التحنيط وأسرارها، ودورها في الحفاظ على أجساد المصريين القدماء استعدادًا للآخرة.'
-    }
+        description:
+            'اكتشف عملية التحنيط وأسرارها، ودورها في الحفاظ على أجساد المصريين القدماء استعدادًا للآخرة.',
+    },
 ];
-
-
 
 export default function AboutUs() {
     const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -65,14 +69,16 @@ export default function AboutUs() {
             setIsPopupOpen(false);
         }
     };
+
     useEffect(() => {
         if (!isPopupOpen) return;
 
         const interval = setInterval(handleNext, 6000);
         return () => clearInterval(interval);
     }, [isPopupOpen, currentIndex]);
+
     return (
-        <section className="py-16 bg-gray-100">
+        <section className="py-6 bg-gray-100 relative z-10 min-h-[840px]"> {/* إضافة min-h-[500px] لمنع التداخل مع footer */ }
             <div className="container mx-auto px-6 text-center">
                 <motion.h2
                     className="text-4xl font-bold text-gray-800 mb-6"
@@ -105,7 +111,7 @@ export default function AboutUs() {
                         <Image
                             width={ 100 }
                             height={ 100 }
-                            sizes='100vw'
+                            sizes="100vw"
                             src="/assets/our-mission.jpg"
                             alt="فريق العمل"
                             className="w-full h-[17rem] object-cover rounded-lg mb-4"
@@ -127,7 +133,7 @@ export default function AboutUs() {
                         <Image
                             width={ 100 }
                             height={ 100 }
-                            sizes='100vw'
+                            sizes="100vw"
                             src="/assets/our-vission.jpg"
                             alt="مهمتنا"
                             className="w-full h-[17rem] object-cover rounded-lg mb-4"
@@ -171,7 +177,7 @@ export default function AboutUs() {
                                     <Image
                                         width={ 100 }
                                         height={ 100 }
-                                        sizes='100vw'
+                                        sizes="100vw"
                                         src={ topics[currentIndex].image }
                                         alt={ topics[currentIndex].title }
                                         className="w-full h-full object-cover"
@@ -182,7 +188,7 @@ export default function AboutUs() {
                                     <div className="absolute bottom-0 right-0 text-slate-200 p-10">
                                         <div className="text-4xl font-bold mb-2">{ topics[currentIndex].title }</div>
                                         <div className="text-sm font-bold font-sans text-slate-400">{ topics[currentIndex].description }</div>
-                                        <Link href={ topics[currentIndex].link } passHref className='z-50 cursor-pointer relative'>
+                                        <Link href={ topics[currentIndex].link } passHref className="z-50 cursor-pointer relative">
                                             <button
                                                 onClick={ () => router.push(topics[currentIndex].link) }
                                                 className="cursor-pointer mt-4 bg-yellow-500 text-white px-4 py-2 rounded-full text-md font-semibold shadow-md hover:bg-yellow-600 transition-all"
