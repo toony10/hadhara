@@ -6,15 +6,16 @@ import Image from 'next/image';
 interface NavItem {
     title: string;
     subItems: string[];
+    link: string;
 }
 
 const navItems: NavItem[] = [
-    { title: 'التحنيط', subItems: ['الهدف منه', 'المواد المستخدمة', 'الاثاث الجنائزي', 'تطور التحنيط', 'الطرق والخطوات الأساسيه', 'الالهه المرتبطه بالتحنيط', 'الطقوس المرتبطه بالتحنيط', 'دور الطب و السحر', 'المومياء واللعنه والعلم', 'التحنيط الحيوان', 'متحف التحنيط'] },
-    { title: 'الحياه اليوميه', subItems: ['الأثاث', 'المباني', 'الحرف والمهن', 'الملابس والزينه', 'الترفيه'] },
-    { title: 'الحياه الدينيه', subItems: ['الألهه', 'الأساطير', 'الأعياد الدينيه', 'المعابد والكهنه', 'التمائم والأختام', 'الكتب الدينيه'] },
-    { title: 'الحياه السياسيه', subItems: ['الملك', 'الجيش والحروب', 'القوانين والمحاكم'] },
-    { title: 'الحياه الأجتماعيه', subItems: ['الأسره', 'الطبقات الأجتماعيه', 'المرأه', 'العادات والتقاليد'] },
-    { title: 'التعليم', subItems: ['الكتابه واللغه', 'الأدب', 'الرياضيات', 'الفلك', 'الطب والعلاج'] },
+    { title: 'التحنيط', subItems: ['الهدف منه', 'المواد المستخدمة', 'الاثاث الجنائزي', 'تطور التحنيط', 'الطرق والخطوات الأساسيه', 'الالهه المرتبطه بالتحنيط', 'الطقوس المرتبطه بالتحنيط', 'دور الطب و السحر', 'المومياء واللعنه والعلم', 'التحنيط الحيوان', 'متحف التحنيط'], link: '/mummification' },
+    { title: 'الحياه اليوميه', subItems: ['الأثاث', 'المباني', 'الحرف والمهن', 'الملابس والزينه', 'الترفيه'], link: '/daily-life' },
+    { title: 'الحياه الدينيه', subItems: ['الألهه', 'الأساطير', 'الأعياد الدينيه', 'المعابد والكهنه', 'التمائم والأختام', 'الكتب الدينيه'], link: '/worship' },
+    { title: 'الحياه السياسيه', subItems: ['الملك', 'الجيش والحروب', 'القوانين والمحاكم'], link: '/politics' },
+    { title: 'الحياه الأجتماعيه', subItems: ['الأسره', 'الطبقات الأجتماعيه', 'المرأه', 'العادات والتقاليد'], link: '/social-life' },
+    { title: 'التعليم', subItems: ['الكتابه واللغه', 'الأدب', 'الرياضيات', 'الفلك', 'الطب والعلاج'], link: '/education' },
 ]
 
 function NavBar() {
@@ -35,6 +36,7 @@ function NavBar() {
     const handleCloseMobileMenu = () => {
         setIsMobileMenuOpen(false);
     };
+
     return (
         <div>
             {/* Navigation Bar */ }
@@ -56,22 +58,21 @@ function NavBar() {
                                 onMouseEnter={ () => setMenuOpen(index) }
                                 onMouseLeave={ () => setMenuOpen(null) }
                             >
-                                <button className="hover:text-yellow-500 text-xl font-bold flex items-center space-x-2">
-                                    <span>{ item.title }</span>
-                                    <span className={ `transform transition-transform duration-300 ${menuOpen === index ? 'rotate-180' : 'rotate-0'}` }>
-                                        ▼
-                                    </span>
-                                </button>
+                                <Link href={ item.link }>
+                                    <button className="hover:text-yellow-500 text-xl font-bold flex items-center space-x-2">
+                                        <span>{ item.title }</span>
+                                    </button>
+                                </Link>
                                 {/* Dropdown Menu */ }
                                 <ul
                                     className={ `absolute right-0 mt-2 bg-gray-800 text-white rounded shadow-lg z-10 transform transition-all duration-300 origin-top ${menuOpen === index ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'}` }
                                 >
                                     { item.subItems.map((subItem, subIndex) => (
-                                        <Link href={ `/${subItem}` } key={ subIndex }>
+                                        <span key={ subIndex }>
                                             <li className="px-4 py-2 hover:bg-gray-700 text-sm font-medium text-gray-300">
                                                 { subItem }
                                             </li>
-                                        </Link>
+                                        </span>
                                     )) }
                                 </ul>
                             </li>
@@ -96,7 +97,8 @@ function NavBar() {
                 >
                     <div
                         className="h-full flex flex-col items-center justify-start pt-12 overflow-y-auto"
-                        onClick={ (e) => e.stopPropagation() }                    >
+                        onClick={ (e) => e.stopPropagation() }
+                    >
                         <button
                             className="absolute top-4 right-4 text-white text-3xl"
                             onClick={ handleCloseMobileMenu }
@@ -105,29 +107,11 @@ function NavBar() {
                         </button>
                         { navItems.map((item, index) => (
                             <div key={ index } className="w-full">
-                                <button
-                                    className="w-full py-3 px-4 text-lg font-bold text-white hover:bg-gray-700 flex justify-between items-center"
-                                    onClick={ () => setMenuOpen(menuOpen === index ? null : index) }
-                                >
-                                    <span>{ item.title }</span>
-                                    <span
-                                        className={ `transform transition-transform duration-300 ${menuOpen === index ? 'rotate-180' : 'rotate-0'}` }
-                                    >
-                                        ▼
-                                    </span>
-                                </button>
-                                {/* Mobile Dropdown */ }
-                                { menuOpen === index && (
-                                    <div className="w-full pl-6 bg-gray-700">
-                                        { item.subItems.map((subItem, subIndex) => (
-                                            <Link href={ `/${subItem}` } key={ subIndex }>
-                                                <div className="py-3 text-white hover:bg-gray-600 px-4">
-                                                    { subItem }
-                                                </div>
-                                            </Link>
-                                        )) }
-                                    </div>
-                                ) }
+                                <Link href={ item.link }>
+                                    <button className="w-full py-3 px-4 text-lg font-bold text-white hover:bg-gray-700 flex justify-between items-center" onClick={ handleCloseMobileMenu }>
+                                        <span>{ item.title }</span>
+                                    </button>
+                                </Link>
                             </div>
                         )) }
                     </div>
