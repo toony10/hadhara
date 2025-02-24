@@ -166,7 +166,7 @@ export default function AboutUs() {
                             onClick={ handleClose }
                         >
                             <motion.div
-                                className="relative bg-white rounded-lg overflow-hidden shadow-2xl max-w-[90%] max-h-[90%]"
+                                className="relative bg-white rounded-lg overflow-hidden shadow-2xl lg:max-w-[90%] lg:max-h-[80%] lg:top-16"
                                 style={ { aspectRatio: '688 / 1024' } }
                                 initial={ { scale: 0.8 } }
                                 animate={ { scale: 1 } }
