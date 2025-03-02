@@ -16,8 +16,7 @@ import { FaArrowUp, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 const subTopics = [
     { title: 'الأسرة', component: <Family /> },
     { title: 'الطبقات الاجتماعية', component: <SocialClasses /> },
-    { title: 'المرأة', component: <Women /> },
-    { title: 'العادات والتقاليد', component: <Traditions /> }
+    { title: 'المرأة', component: <Women /> }
 ];
 
 export default function SocialLife() {

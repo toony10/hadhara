@@ -21,7 +21,7 @@ function ContentBlock({ title, description, listItems, imageUrls, imageDescripti
 
     return (
         <motion.div
-            className={ `w-full flex flex-col lg:flex-row items-center gap-12 py-10 px-10 my-0
+            className={ `w-full flex flex-col lg:flex-row items-center gap-12 py-10 px-10
                 ${reverse ? "lg:flex-row-reverse" : ""} 
                 odd:bg-gray-50 even:bg-white transition-all duration-500`}
             initial={ { opacity: 0, y: 50 } }
