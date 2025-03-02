@@ -7,7 +7,6 @@ import SubjectHeader from '../../commponents/custome/SubjectHeader';
 import Family from '../../commponents/social-life/Family';
 import SocialClasses from '../../commponents/social-life/SocialClasses';
 import Women from '../../commponents/social-life/Women';
-import Traditions from '../../commponents/social-life/Traditions';
 
 import { motion } from 'framer-motion';
 import { FaArrowUp, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
