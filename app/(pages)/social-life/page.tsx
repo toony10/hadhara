@@ -110,7 +110,7 @@ export default function SocialLife() {
             <div ref={ sectionRef } className="mt-10"></div>
 
             {/* عرض المكون النشط فقط */ }
-            <section className='w-full flex justify-center items-center min-h-screen p-6'>
+            <section className='w-full flex justify-center items-center min-h-screen'>
                 <motion.div
                     key={ activeIndex }
                     initial={ { opacity: 0, y: 20 } }
