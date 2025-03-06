@@ -1,3 +1,5 @@
+"use client";
+
 import Link from 'next/link';
 import React from 'react';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
@@ -13,7 +15,9 @@ function Footer() {
                     </div>
 
                     <div className="flex space-x-6">
-                        <Link href="/" className="hover:text-yellow-500 transition-all">الرئيسية</Link>
+                        <Link href="/">
+                            الرئيسية
+                        </Link>
                         <Link href="/contact" className="hover:text-yellow-500 transition-all">تواصل معنا</Link>
                     </div>
                 </div>
