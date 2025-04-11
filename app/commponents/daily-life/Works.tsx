@@ -35,7 +35,7 @@ function Works() {
                 )) }
             </div>
             {/* <ReferencesSection references={ references } /> */ }
-            <hr className="mt-10 border-t-2 border-dotted border-stone-300 w-1/2 mx-auto" />
+
         </div>
     )
 }

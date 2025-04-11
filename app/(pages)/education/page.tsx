@@ -109,11 +109,7 @@ export default function Education() {
                     onClick: () => handleTopicChange(index)
                 })) }
             />
-
-            {/* رأس القسم الذي سيتم التمرير إليه عند تغيير الموضوع */ }
             <div ref={ sectionRef } className="mt-10"></div>
-
-            {/* عرض المكون النشط فقط */ }
             <section className='w-full flex justify-center items-center min-h-screen'>
                 <motion.div
                     key={ activeIndex }
@@ -149,7 +145,7 @@ export default function Education() {
                     className="bg-yellow-500 text-white p-4 rounded-full shadow-lg hover:bg-yellow-600 transition-all"
                     whileHover={ { scale: 1.2 } }
                     animate={ {
-                        y: [0, -5, 0], // حركة عائمة
+                        y: [0, -5, 0],
                         transition: { duration: 1.5, repeat: Infinity, ease: 'easeInOut' }
                     } }
                 >
