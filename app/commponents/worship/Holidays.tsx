@@ -54,7 +54,7 @@ function Holidays() {
                     />
                 )) }
             </div>
-            <ReferencesSection references={ references } />
+            {/* <ReferencesSection references={ references } /> */ }
             {/* خط فاصل أسفل القسم */ }
 
         </div>
