@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import TopicHeader from '../custome/TopicHeader';
 import ContentBlock from '../custome/ContentBlock'
-import ReferencesSection from '../custome/ReferencesSection';
+// import ReferencesSection from '../custome/ReferencesSection';
 
 interface ContentData {
     title: string;
@@ -14,12 +14,12 @@ interface ContentData {
 
 function Myths() {
     const [data, setData] = useState<ContentData[]>([]);
-    const references = [
-        {
-            title: "كتاب الأساطير المصرية",
-            link: "https://example.com/egyptian-myths"
-        }
-    ];
+    // const references = [
+    //     {
+    //         title: "كتاب الأساطير المصرية",
+    //         link: "https://example.com/egyptian-myths"
+    //     }
+    // ];
 
 
     useEffect(() => {

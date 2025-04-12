@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import TopicHeader from '../custome/TopicHeader';
 import ContentBlock from '../custome/ContentBlock'
-import ReferencesSection from '../custome/ReferencesSection';
+// import ReferencesSection from '../custome/ReferencesSection';
 
 interface ContentData {
     title: string;
@@ -15,28 +15,28 @@ interface ContentData {
 function Talismans() {
     const [data, setData] = useState<ContentData[]>([]);
 
-    const references = [
-        {
-            title: "فنون صغري فرعونية - تأليف أحمد ابو بكر جلال",
-            link: "#"
-        },
-        {
-            title: "محاضرات في تاريخ الفن والعمارة المصرية القديمة - تأليف رمضان وجدي",
-            link: "#"
-        },
-        {
-            title: "محاضرات في الديانة المصرية القديمة - د. زينب سعيد حشيش",
-            link: "#"
-        },
-        {
-            title: "تاريخ الفن المصري القديم - د. محمد احمد السيد",
-            link: "#"
-        },
-        {
-            title: "التمائم فى مصر القديمة - الباحثة سمر فهيم حماد",
-            link: "#"
-        }
-    ];
+    // const references = [
+    //     {
+    //         title: "فنون صغري فرعونية - تأليف أحمد ابو بكر جلال",
+    //         link: "#"
+    //     },
+    //     {
+    //         title: "محاضرات في تاريخ الفن والعمارة المصرية القديمة - تأليف رمضان وجدي",
+    //         link: "#"
+    //     },
+    //     {
+    //         title: "محاضرات في الديانة المصرية القديمة - د. زينب سعيد حشيش",
+    //         link: "#"
+    //     },
+    //     {
+    //         title: "تاريخ الفن المصري القديم - د. محمد احمد السيد",
+    //         link: "#"
+    //     },
+    //     {
+    //         title: "التمائم فى مصر القديمة - الباحثة سمر فهيم حماد",
+    //         link: "#"
+    //     }
+    // ];
 
     useEffect(() => {
         fetch("/data/Worship/Talismans.json")

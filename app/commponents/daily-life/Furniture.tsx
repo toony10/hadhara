@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import TopicHeader from '../custome/TopicHeader';
 import ContentBlock from '../custome/ContentBlock'
-import ReferencesSection from '../custome/ReferencesSection';
+// import ReferencesSection from '../custome/ReferencesSection';
 
 interface ContentData {
     title: string;
@@ -14,16 +14,16 @@ interface ContentData {
 function Furniture() {
     const [data, setData] = useState<ContentData[]>([]);
 
-    const references = [
-        {
-            title: "أشغال النجارة في مصر القديمة (نجارة الأثاث والعمارة اللوحات) - د. محمد راشد حماد",
-            link: "https://example.com/woodwork-1970"
-        },
-        {
-            title: "نجارة الأثاث في مصر القديمة - د. محمد راشد حماد",
-            link: "https://example.com/furniture-2009"
-        }
-    ];
+    // const references = [
+    //     {
+    //         title: "أشغال النجارة في مصر القديمة (نجارة الأثاث والعمارة اللوحات) - د. محمد راشد حماد",
+    //         link: "https://example.com/woodwork-1970"
+    //     },
+    //     {
+    //         title: "نجارة الأثاث في مصر القديمة - د. محمد راشد حماد",
+    //         link: "https://example.com/furniture-2009"
+    //     }
+    // ];
 
     useEffect(() => {
         fetch("/data/daily-life/furniture.json") // تحميل البيانات من الملف
@@ -45,7 +45,7 @@ function Furniture() {
                     />
                 )) }
             </div>
-            <ReferencesSection references={ references } />
+            {/* <ReferencesSection references={ references } /> */ }
             {/* خط فاصل أسفل القسم */ }
 
         </div>

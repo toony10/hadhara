@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import TopicHeader from '../custome/TopicHeader';
 import ContentBlock from '../custome/ContentBlock'
-import ReferencesSection from '../custome/ReferencesSection';
+// import ReferencesSection from '../custome/ReferencesSection';
 
 interface ContentData {
     title: string;
@@ -14,20 +14,20 @@ interface ContentData {
 
 function Gods() {
     const [data, setData] = useState<ContentData[]>([]);
-    const references = [
-        {
-            title: "مجتمع الآلهة في الديانة المصرية القديمة - تأليف عباس علي عباس الحسيني",
-            link: "https://example.com/gods-society-abbas-husseini"
-        },
-        {
-            title: "الديانة المصرية القديمة - تأليف ياروسلاف تشرني، ترجمة: أحمد ندري",
-            link: "https://example.com/ancient-egyptian-religion-yaroslav-cerny"
-        },
-        {
-            title: "الديانة المصرية القديمة - د. زينب حشيش",
-            link: "https://example.com/ancient-egyptian-religion-zainab-hasheesh"
-        }
-    ];
+    // const references = [
+    //     {
+    //         title: "مجتمع الآلهة في الديانة المصرية القديمة - تأليف عباس علي عباس الحسيني",
+    //         link: "https://example.com/gods-society-abbas-husseini"
+    //     },
+    //     {
+    //         title: "الديانة المصرية القديمة - تأليف ياروسلاف تشرني، ترجمة: أحمد ندري",
+    //         link: "https://example.com/ancient-egyptian-religion-yaroslav-cerny"
+    //     },
+    //     {
+    //         title: "الديانة المصرية القديمة - د. زينب حشيش",
+    //         link: "https://example.com/ancient-egyptian-religion-zainab-hasheesh"
+    //     }
+    // ];
 
 
     useEffect(() => {
