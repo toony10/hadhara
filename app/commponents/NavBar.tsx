@@ -40,7 +40,7 @@ function NavBar() {
     return (
         <div>
             {/* Navigation Bar */ }
-            <nav className={ `fixed h-32 top-0 w-full z-20 transition-colors duration-300 ${isScrolled ? 'bg-white bg-opacity-100 shadow-lg' : 'bg-transparent'}` }>
+            <nav className={ `fixed h-32 top-0 w-full z-20 transition-colors duration-300 ${isScrolled ? 'bg-white bg-opacity-100 shadow-lg text-gray-800' : 'bg-transparent'}` }>
                 <div className="container mx-auto px-4 py-4 flex justify-between items-center">
                     {/* Logo */ }
                     <div className="text-2xl font-bold">
