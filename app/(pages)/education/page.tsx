@@ -101,7 +101,7 @@ export default function Education() {
         <div className='w-full'>
             {/* الهيدر مع الأزرار للتنقل بين المواضيع */ }
             <SubjectHeader
-                title="التعليم"
+                title="العلوم"
                 description="استكشف أسرار المعرفة عند الفراعنة، حيث أضاء العلم عصورًا من الإبداع والإلهام"
                 backgroundImage="/assets/topic-headings/education.png"
                 subTopics={ subTopics.map((topic, index) => ({
