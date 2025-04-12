@@ -16,7 +16,7 @@ function Mathematics() {
 
 
     useEffect(() => {
-        fetch("/data/education/Mathematics.json")
+        fetch("/data/education/mathematics.json")
             .then((res) => res.json())
             .then((jsonData) => setData(jsonData));
     }, []);
