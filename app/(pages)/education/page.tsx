@@ -9,6 +9,7 @@ import Literature from '../../commponents/education/Literature';
 import Mathematics from '../../commponents/education/Mathematics';
 import Astronomy from '../../commponents/education/Astronomy';
 import MedicineHealing from '../../commponents/education/MedicineHealing';
+import EducationSec from '../../commponents/education/EducationSec'
 
 import { motion } from 'framer-motion';
 import { FaArrowUp, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
@@ -19,7 +20,8 @@ const subTopics = [
     { title: 'الأدب', component: <Literature /> },
     { title: 'الرياضيات', component: <Mathematics /> },
     { title: 'الفلك', component: <Astronomy /> },
-    { title: 'الطب والعلاج', component: <MedicineHealing /> }
+    { title: 'الطب والعلاج', component: <MedicineHealing /> },
+    { title: 'فلسفة التعليم واهدافه', component: <EducationSec /> }
 ];
 
 export default function Education() {
