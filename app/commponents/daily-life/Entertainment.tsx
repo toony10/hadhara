@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import TopicHeader from '../custome/TopicHeader';
 import ContentBlock from '../custome/ContentBlock';
 
-// import ReferencesSection from '../custome/ReferencesSection';
+import ReferencesSection from '../custome/ReferencesSection';
 
 interface ContentData {
     title: string;
@@ -14,6 +14,11 @@ interface ContentData {
 
 function Entertainment() {
     const [data, setData] = useState<ContentData[]>([]);
+    const references = [
+        { title: "الألعاب والتسلية والترفيه عند مصر القديمة", author: "د. زاهي حواس" },
+        { title: "مظاهر الترفيه والتسلية في مصر القديمة - الموسم الثقافي الأثري السادس بمكتبة الإسكندرية", author: "د. عبد الحليم نور الدين" },
+        { title: "تاريخ الرياضة عند المصريين القدماء", author: "المهندس أحمد الدرداء توني، عضو اللجنة الأولمبية الدولية" }
+    ];
 
     useEffect(() => {
         fetch("/data/daily-life/Entertainment.json")
@@ -39,9 +44,7 @@ function Entertainment() {
                     />
                 )) }
             </div>
-            {/* <ReferencesSection references={ references } /> */ }
-            {/* خط فاصل أسفل القسم */ }
-
+            <ReferencesSection references={ references } />
         </div>
     );
 }

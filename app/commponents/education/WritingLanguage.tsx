@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import TopicHeader from '../custome/TopicHeader';
 import ContentBlock from '../custome/ContentBlock';
-// import ReferencesSection from '../custome/ReferencesSection';
+import ReferencesSection from '../custome/ReferencesSection';
 
 interface ContentData {
     title: string;
@@ -13,6 +13,11 @@ interface ContentData {
 
 function WritingLanguage() {
     const [data, setData] = useState<ContentData[]>([]);
+    const references = [
+        { title: "اللغة المصرية القديمة - الجزء الأول", author: "د. محمد علي نصار" },
+        { title: "تعليم الهيروغليفية (لغة مصر القديمة وأصل الخطوط العالمية)", author: "د. محمد حماد" },
+        { title: "اللغة المصرية القديمة", author: "د. عبد الحليم نور الدين" }
+    ];
 
 
     useEffect(() => {
@@ -39,8 +44,7 @@ function WritingLanguage() {
                     />
                 )) }
             </div>
-            {/* <ReferencesSection references={ references } /> */ }
-            {/* خط فاصل أسفل القسم */ }
+            <ReferencesSection references={ references } />
 
         </div>
     )

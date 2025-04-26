@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import ContentBlock from '../custome/ContentBlock';
 import TopicHeader from '../custome/TopicHeader';
-// import ReferencesSection from '../custome/ReferencesSection';
+import ReferencesSection from '../custome/ReferencesSection';
 
 interface ContentData {
     title: string;
@@ -15,6 +15,14 @@ interface ContentData {
 
 function MedicineMagic() {
     const [data, setData] = useState<ContentData[]>([]);
+    const references = [
+        { title: "رسالة ماجستير بعنوان: التحنيط في مصر القديمة", author: "تحت إشراف د. مياطه التيجاني" },
+        { title: "الحياة اليومية" },
+        { title: "الأثاث في مصر القديمة" },
+        { title: "أشغال النجارة في مصر القديمة", author: "د. محمد راشد حماد" },
+        { title: "نجارة الأثاث في مصر القديمة", author: "تقديم: د. زاهي حواس، تأليف: د. محمد راشد حماد" },
+        { title: "مجلة العمارة والفنون - العدد الرابع عشر: دراسة تقنيات الأثاث المنطبق في الحضارة المصرية القديمة وتوظيفها لتصميم آثار معاصرة" }
+    ];
 
     useEffect(() => {
         fetch("/data/Mummification/MedicineMagic.json")
@@ -40,7 +48,7 @@ function MedicineMagic() {
                     />
                 )) }
             </div>
-            {/* <ReferencesSection references={ references } /> */ }
+            <ReferencesSection references={ references } />
 
         </div>
     );

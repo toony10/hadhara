@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import TopicHeader from '../custome/TopicHeader';
 import ContentBlock from '../custome/ContentBlock';
-// import ReferencesSection from '../custome/ReferencesSection';
+import ReferencesSection from '../custome/ReferencesSection';
 
 interface ContentData {
     title: string;
@@ -11,8 +11,13 @@ interface ContentData {
     imageDescriptions?: string[];
 }
 
+
 function Astronomy() {
     const [data, setData] = useState<ContentData[]>([]);
+    const references = [
+        { title: "الفلك في مصر القديمة", author: "ماسيميليانو فرانشي" },
+        { title: "مسارات الأجرام والأفلاك الكونية", author: "د. سمير أديب" }
+    ];
 
 
     useEffect(() => {
@@ -39,9 +44,7 @@ function Astronomy() {
                     />
                 )) }
             </div>
-            {/* <ReferencesSection references={ references } /> */ }
-            {/* خط فاصل أسفل القسم */ }
-
+            <ReferencesSection references={ references } />
         </div>
     )
 }

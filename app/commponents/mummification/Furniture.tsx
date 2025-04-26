@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import ContentBlock from '../custome/ContentBlock';
 import TopicHeader from '../custome/TopicHeader';
-// import ReferencesSection from '../custome/ReferencesSection';
+import ReferencesSection from '../custome/ReferencesSection';
 
 interface ContentData {
     title: string;
@@ -15,6 +15,13 @@ interface ContentData {
 
 function Furniture() {
     const [data, setData] = useState<ContentData[]>([]);
+    const references = [
+        { title: "مدخل لدراسة الفنون الصغرى وفنون صياغة وتشكيل الحلي", author: "د. محمد أحمد السيد" },
+        { title: "طرق الدفن والأثاث الجنائزي في مقابر موقع الحصمة - شقرة", author: "صالح سلطان عبده الحسيني" },
+        { title: "التحنيط في مصر القديمة", author: "د. عبد الحليم نور الدين" },
+        { title: "الأثاث في مصر القديمة", author: "مكتبة الإسكندرية" },
+        { title: "مصر والشرق الأدنى القديم - الحضارة المصرية القديمة (الجزء الثاني): الحياة الاجتماعية والسياسية والعسكرية والقضائية والدينية", author: "أ.د. محمد بيومي مهران، أستاذ تاريخ مصر والشرق الأدنى القديم ورئيس قسم التاريخ والآثار المصرية والإسلامية، كلية الآداب - جامعة الإسكندرية" }
+    ];
 
     useEffect(() => {
         fetch("/data/Mummification/furniture.json")
@@ -40,7 +47,7 @@ function Furniture() {
                     />
                 )) }
             </div>
-            {/* <ReferencesSection references={ references } /> */ }
+            <ReferencesSection references={ references } />
 
         </div>
     );

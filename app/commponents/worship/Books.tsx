@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import TopicHeader from '../custome/TopicHeader';
 import ContentBlock from '../custome/ContentBlock';
-// import ReferencesSection from '../custome/ReferencesSection';
+import ReferencesSection from '../custome/ReferencesSection';
 
 interface ContentData {
     title: string;
@@ -14,24 +14,12 @@ interface ContentData {
 function Books() {
     const [data, setData] = useState<ContentData[]>([]);
 
-    // const references = [
-    //     {
-    //         title: "كتاب الديانة فى مصر القديمة ل ياروسالف تشرفى",
-    //         link: "#"
-    //     },
-    //     {
-    //         title: "الدين فى مصر القديمة ل ابكار السقاف",
-    //         link: "#"
-    //     },
-    //     {
-    //         title: "الديانة فى مصر القديمة ل جون بينز",
-    //         link: "#"
-    //     },
-    //     {
-    //         title: "الديانة فى مصر القديمة ل د/ زينب حشيش",
-    //         link: "#"
-    //     }
-    // ];
+    const references = [
+        { title: "الديانة في مصر القديمة", author: "ياروسلاف تشيرني" },
+        { title: "الدين في مصر القديمة", author: "أبكار السقاف" },
+        { title: "الديانة في مصر القديمة", author: "جون بينز" },
+        { title: "الديانة في مصر القديمة", author: "د. زينب حشيش" }
+    ];
 
     useEffect(() => {
         fetch("/data/Worship/Books.json")
@@ -57,8 +45,7 @@ function Books() {
                     />
                 )) }
             </div>
-            {/* <ReferencesSection references={ references } /> */ }
-            {/* خط فاصل أسفل القسم */ }
+            <ReferencesSection references={ references } />
 
         </div>
     )

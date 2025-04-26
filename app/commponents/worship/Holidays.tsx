@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import TopicHeader from '../custome/TopicHeader';
 import ContentBlock from '../custome/ContentBlock'
-// import ReferencesSection from '../custome/ReferencesSection';
+import ReferencesSection from '../custome/ReferencesSection';
 interface ContentData {
     title: string;
     description?: string;
@@ -12,24 +12,12 @@ interface ContentData {
 
 function Holidays() {
     const [data, setData] = useState<ContentData[]>([]);
-    // const references = [
-    //     {
-    //         title: "الأعياد في مصر القديمة - د. عبد الحليم نور الدين",
-    //         link: "https://example.com/ancient-egypt-festivals"
-    //     },
-    //     {
-    //         title: "English Readings in Egyptology - Prof. Dr. Wazir W. Abdel-Wahab",
-    //         link: "https://example.com/english-readings-egyptology"
-    //     },
-    //     {
-    //         title: "موسوعة مصر القديمة (الجزء الثالث) - د. سليم حسن",
-    //         link: "https://example.com/ancient-egypt-encyclopedia-vol3"
-    //     },
-    //     {
-    //         title: "حضارة مصر القديمة - د. وزير وزير عبد الوهاب",
-    //         link: "https://example.com/ancient-egypt-civilization"
-    //     }
-    // ];
+    const references = [
+        { title: "الأعياد في مصر القديمة", author: "د. عبد الحليم نور الدين" },
+        { title: "حضارة مصر القديمة", author: "د. وزير وزير عبد الوهاب" },
+        { title: "حضارة مصر القديمة (المجتمع المصري القديم)", author: "د. محمد أحمد السيد" },
+        { title: "English Readings in Egyptology", author: "Prof. Dr. Wazir W. Abdel-Wahab" }
+    ];
 
 
     useEffect(() => {
@@ -54,8 +42,7 @@ function Holidays() {
                     />
                 )) }
             </div>
-            {/* <ReferencesSection references={ references } /> */ }
-            {/* خط فاصل أسفل القسم */ }
+            <ReferencesSection references={ references } />
 
         </div>
     )

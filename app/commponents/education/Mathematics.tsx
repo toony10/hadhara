@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import TopicHeader from '../custome/TopicHeader';
 import ContentBlock from '../custome/ContentBlock';
-// import ReferencesSection from '../custome/ReferencesSection';
+import ReferencesSection from '../custome/ReferencesSection';
 
 interface ContentData {
     title: string;
@@ -13,6 +13,11 @@ interface ContentData {
 
 function Mathematics() {
     const [data, setData] = useState<ContentData[]>([]);
+    const references = [
+        { title: "تاريخ مصر القديمة", author: "وزير وزير عبد الوهاب" },
+        { title: "الهندسة في مصر القديمة", author: "ثيوفيل أوبينجا (ترجمة: حسام الدين زكريا)" },
+        { title: "العلوم المصرية - موسوعة مصر القديمة، الجزء الثاني، الفصل الحادي عشر", author: "سليم حسن" }
+    ];
 
 
     useEffect(() => {
@@ -39,9 +44,7 @@ function Mathematics() {
                     />
                 )) }
             </div>
-            {/* <ReferencesSection references={ references } /> */ }
-            {/* خط فاصل أسفل القسم */ }
-
+            <ReferencesSection references={ references } />
         </div>
     )
 }

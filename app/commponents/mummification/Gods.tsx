@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import ContentBlock from '../custome/ContentBlock';
 import TopicHeader from '../custome/TopicHeader';
-// import ReferencesSection from '../custome/ReferencesSection';
+import ReferencesSection from '../custome/ReferencesSection';
 
 interface ContentData {
     title: string;
@@ -15,6 +15,10 @@ interface ContentData {
 
 function Gods() {
     const [data, setData] = useState<ContentData[]>([]);
+    const references = [
+        { title: "التحنيط: فلسفة الخلود في مصر القديمة", author: "د. أحمد صالح" },
+        { title: "برت أم هرو (كتاب الموتى الفرعوني) - عن بردية آني بالمتحف البريطاني", author: "ترجمة عن الهيروغليفية: السير والس بدج" }
+    ];
 
     useEffect(() => {
         fetch("/data/Mummification/Gods.json")
@@ -40,7 +44,7 @@ function Gods() {
                     />
                 )) }
             </div>
-            {/* <ReferencesSection references={ references } /> */ }
+            <ReferencesSection references={ references } />
 
         </div>
     );

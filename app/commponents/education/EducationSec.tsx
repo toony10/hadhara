@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import TopicHeader from '../custome/TopicHeader';
 import ContentBlock from '../custome/ContentBlock';
-// import ReferencesSection from '../custome/ReferencesSection';
+import ReferencesSection from '../custome/ReferencesSection';
 
 interface ContentData {
     title: string;
@@ -13,6 +13,11 @@ interface ContentData {
 
 function EducationSec() {
     const [data, setData] = useState<ContentData[]>([]);
+    const references = [
+        { title: "التربية في الحضارة المصرية القديمة", author: "د. سعيد إسماعيل علي" },
+        { title: "التربية والتعليم عند المصريين القدماء", author: "ترجمة: مصطفى عبد الباسط، مراجعة: محمد أبو حطب وخالد، مراجعة تاريخية: هليل غالي" },
+        { title: "التربية والتعليم في مصر القديمة", author: "إعداد الباحث الأثري: محمد محمود عبد اللطيف مشالي" }
+    ];
 
 
     useEffect(() => {
@@ -39,8 +44,8 @@ function EducationSec() {
                     />
                 )) }
             </div>
-            {/* <ReferencesSection references={ references } /> */ }
-            {/* خط فاصل أسفل القسم */ }
+            <ReferencesSection references={ references } />
+
 
         </div>
     )

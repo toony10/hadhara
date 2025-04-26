@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import TopicHeader from '../custome/TopicHeader';
 import ContentBlock from '../custome/ContentBlock';
-// import ReferencesSection from '../custome/ReferencesSection';
+import ReferencesSection from '../custome/ReferencesSection';
 
 interface ContentData {
     title: string;
@@ -13,7 +13,20 @@ interface ContentData {
 
 function Family() {
     const [data, setData] = useState<ContentData[]>([]);
-
+    const references = [
+        { title: "حضارة مصر القديمة", author: "د. وزير وزير عبد الوهاب، أستاذ آثار وحضارة مصر القديمة، جامعة بني سويف" },
+        { title: "الزواج والطلاق في مصر القديمة", author: "أ.د. تحفة أحمد حندوسة" },
+        { title: "مصر أيام الفراعنة", author: "محمد الخطيب" },
+        { title: "مصر والشرق الأدنى القديم - الحضارة المصرية القديمة، الجزء الثاني: الحياة الاجتماعية والسياسية والعسكرية والقضائية والدينية", author: "أ.د. محمد بيومي مهران، أستاذ تاريخ مصر والشرق الأدنى القديم ورئيس قسم التاريخ والآثار المصرية والإسلامية، كلية الآداب - جامعة الإسكندرية" },
+        { title: "الناس والحياة في مصر القديمة", author: "دومينيك قالبيل (ترجمة: ماهر جويجاتي، مراجعة: د. زكية طبوزاده)" },
+        { title: "نظام الأسرة في مصر القديمة", author: "الباحث بدر عبد الله حسمني" },
+        { title: "الأسرة المصرية في عصورها القديمة", author: "د. عبد العزيز صالح" },
+        { title: "الحياة الاجتماعية في مصر القديمة", author: "هشام الجبالي" },
+        { title: "الحياة الاجتماعية في مصر القديمة", author: "سمير و.م فلندرز بتري (ترجمة: حسن محمد جوهر وعبد المنعم عبد الحليم)" },
+        { title: "الحياة الاجتماعية في مصر القديمة", author: "الباحث وليد حمدي سعد الدين الضيفي" },
+        { title: "موسوعة الحضارة المصرية القديمة", author: "د. سمير أديب" },
+        { title: "La Vita Quotidiana Nell’Antico Egitto" }
+    ];
 
     useEffect(() => {
         fetch("/data/Social-life/Family.json")
@@ -39,8 +52,7 @@ function Family() {
                     />
                 )) }
             </div>
-            {/* <ReferencesSection references={ references } /> */ }
-            {/* خط فاصل أسفل القسم */ }
+            <ReferencesSection references={ references } />
 
         </div>
     )

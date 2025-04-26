@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import TopicHeader from '../custome/TopicHeader';
 import ContentBlock from '../custome/ContentBlock';
-// import ReferencesSection from '../custome/ReferencesSection';
+import ReferencesSection from '../custome/ReferencesSection';
 
 interface ContentData {
     title: string;
@@ -13,6 +13,11 @@ interface ContentData {
 
 function Literature() {
     const [data, setData] = useState<ContentData[]>([]);
+    const references = [
+        { title: "تاريخ الحضارة الفرعونية", author: "محمد شفيق غربال ورفاقه" },
+        { title: "عندما حكمت مصر الشرق", author: "تأليف: شيندورف، ترجمة: محمد العزب موسى" },
+        { title: "مصر أيام الفراعنة", author: "د. محمد الخطيب" }
+    ];
 
 
     useEffect(() => {
@@ -39,8 +44,7 @@ function Literature() {
                     />
                 )) }
             </div>
-            {/* <ReferencesSection references={ references } /> */ }
-            {/* خط فاصل أسفل القسم */ }
+            <ReferencesSection references={ references } />
 
         </div>
     )

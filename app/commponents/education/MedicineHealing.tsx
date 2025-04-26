@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import TopicHeader from '../custome/TopicHeader';
 import ContentBlock from '../custome/ContentBlock';
-// import ReferencesSection from '../custome/ReferencesSection';
+import ReferencesSection from '../custome/ReferencesSection';
 
 interface ContentData {
     title: string;
@@ -13,6 +13,13 @@ interface ContentData {
 
 function MedicineHealing() {
     const [data, setData] = useState<ContentData[]>([]);
+    const references = [
+        { title: "الطب والعلاج في مصر القديمة", author: "نجلاء حبيب الزحالوي" },
+        { title: "السحر والطب في الحضارات القديمة", author: "أسامة عدنان يحيى" },
+        { title: "تاريخ الطب عند الأمم القديمة والحديثة", author: "عيسى إسكندر معلوف" },
+        { title: "مصر القديمة", author: "سليم حسن" },
+        { title: "الطب المصري القديم", author: "د. حسن كمال" }
+    ];
 
 
     useEffect(() => {
@@ -39,9 +46,7 @@ function MedicineHealing() {
                     />
                 )) }
             </div>
-            {/* <ReferencesSection references={ references } /> */ }
-            {/* خط فاصل أسفل القسم */ }
-
+            <ReferencesSection references={ references } />
         </div>
     )
 }

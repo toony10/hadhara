@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import ContentBlock from '../custome/ContentBlock';
 import TopicHeader from '../custome/TopicHeader';
-// import ReferencesSection from '../custome/ReferencesSection';
+import ReferencesSection from '../custome/ReferencesSection';
 
 interface ContentData {
     title: string;
@@ -15,6 +15,11 @@ interface ContentData {
 
 function Furniture() {
     const [data, setData] = useState<ContentData[]>([]);
+    const references = [
+        { title: "التحنيط عند الفراعنة", author: "إعداد: مايكل يوسف سلوانس" },
+        { title: "فن التحنيط لدى المصريين القدماء", author: "إعداد: الطالبتان سليمان رجب وسيد أحمد" },
+        { title: "التحنيط في مصر", author: "حنيش جمعة وقادري زهرة" }
+    ];
 
     useEffect(() => {
         fetch("/data/Mummification/Steps.json")
@@ -39,7 +44,7 @@ function Furniture() {
                     />
                 )) }
             </div>
-            {/* <ReferencesSection references={references} /> */ }
+            <ReferencesSection references={ references } />
 
         </div>
     );

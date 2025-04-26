@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import TopicHeader from '../custome/TopicHeader';
 import ContentBlock from '../custome/ContentBlock'
-// import ReferencesSection from '../custome/ReferencesSection';
+import ReferencesSection from '../custome/ReferencesSection';
 
 interface ContentData {
     title: string;
@@ -13,6 +13,12 @@ interface ContentData {
 
 function Furniture() {
     const [data, setData] = useState<ContentData[]>([]);
+    const references = [
+        { title: "العمارة في مصر القديمة", author: "د. محمد أنور شكري" },
+        { title: "تاريخ العمارة المصرية القديمة - الجزء الأول: من أقدم العصور إلى نهاية الدولة القديمة", author: "تأليف: د. إسكندر بدوي، ترجمة: د. محمود عبد الرازق وصالح الدين رمضان، مراجعة: د. أحمد قدري ود. محمود ماهر طه" },
+        { title: "آثار وحضارة مصر القديمة - الجزء الأول", author: "د. عبد الحليم نور الدين" },
+        { title: "العمارة: أنواعها وتطورها عبر العصور المختلفة", author: "د. رمضان عبده علي" }
+    ];
 
     useEffect(() => {
         fetch("/data/daily-life/Buildings.json")
@@ -37,7 +43,7 @@ function Furniture() {
                     />
                 )) }
             </div>
-            {/* <ReferencesSection references={ references } /> */ }
+            <ReferencesSection references={ references } />
         </div>
     )
 }

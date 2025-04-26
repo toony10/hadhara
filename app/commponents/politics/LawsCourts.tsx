@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import TopicHeader from '../custome/TopicHeader';
 import ContentBlock from '../custome/ContentBlock';
-// import ReferencesSection from '../custome/ReferencesSection';
+import ReferencesSection from '../custome/ReferencesSection';
 
 interface ContentData {
     title: string;
@@ -13,6 +13,12 @@ interface ContentData {
 
 function LawsCourts() {
     const [data, setData] = useState<ContentData[]>([]);
+    const references = [
+        { title: "مصر والحياة المصرية في العصور القديمة", author: "أدولف إرمان وهرمان رانكه (ترجمة ومراجعة: د. عبد المنعم أبو بكر ومحرم كمال، القاهرة 1953)" },
+        { title: "ماعت: مصر الفرعونية وفكرة العدالة الاجتماعية", author: "يان أسمان (ترجمة: زكية طبوزاده وعليه شريف، القاهرة 1996)" },
+        { title: "الجريمة والعقاب في الفكر المصري القديم", author: "د. أحمد أمين سليم ود. سوزان عباس عبد اللطيف، أستاذَا تاريخ وحضارة مصر والشرق الأدنى القديم، جامعة الإسكندرية" },
+        { title: "آثار وحضارة مصر القديمة", author: "د. عبد الحليم نور الدين" }
+    ];
 
 
     useEffect(() => {
@@ -40,8 +46,7 @@ function LawsCourts() {
                     />
                 )) }
             </div>
-            {/* <ReferencesSection references={ references } /> */ }
-            {/* خط فاصل أسفل القسم */ }
+            <ReferencesSection references={ references } />
 
         </div>
     )

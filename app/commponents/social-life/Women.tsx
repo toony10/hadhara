@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import TopicHeader from '../custome/TopicHeader';
 import ContentBlock from '../custome/ContentBlock';
-// import ReferencesSection from '../custome/ReferencesSection';
+import ReferencesSection from '../custome/ReferencesSection';
 
 interface ContentData {
     title: string;
@@ -13,6 +13,11 @@ interface ContentData {
 
 function Women() {
     const [data, setData] = useState<ContentData[]>([]);
+    const references = [
+        { title: "المرأة في مصر القديمة", author: "محمد فياض" },
+        { title: "المرأة في مصر القديمة", author: "عبد الحليم نور الدين" },
+        { title: "المرأة والزواج في مصر القديمة", author: "نشأت عبيد سعد" }
+    ];
 
 
     useEffect(() => {
@@ -39,8 +44,7 @@ function Women() {
                     />
                 )) }
             </div>
-            {/* <ReferencesSection references={ references } /> */ }
-            {/* خط فاصل أسفل القسم */ }
+            <ReferencesSection references={ references } />
 
         </div>
     )

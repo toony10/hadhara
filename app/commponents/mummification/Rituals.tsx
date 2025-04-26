@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import ContentBlock from '../custome/ContentBlock';
 import TopicHeader from '../custome/TopicHeader';
-// import ReferencesSection from '../custome/ReferencesSection';
+import ReferencesSection from '../custome/ReferencesSection';
 
 interface ContentData {
     title: string;
@@ -15,6 +15,12 @@ interface ContentData {
 
 function Rituals() {
     const [data, setData] = useState<ContentData[]>([]);
+    const references = [
+        { title: "حضارة مصر القديمة", author: "د. وزير وزير عبد الوهاب، أستاذ آثار وحضارة مصر القديمة" },
+        { title: "السحر في مصر القديمة", author: "د. زينب سعيد حشيش" },
+        { title: "التحنيط: فلسفة الخلود في مصر القديمة", author: "د. أحمد صالح" },
+        { title: "برت أم هرو (كتاب الموتى الفرعوني) - عن بردية آني بالمتحف البريطاني" }
+    ];
 
     useEffect(() => {
         fetch("/data/Mummification/Rituals.json")
@@ -40,7 +46,7 @@ function Rituals() {
                     />
                 )) }
             </div>
-            {/* <ReferencesSection references={ references } /> */ }
+            <ReferencesSection references={ references } />
 
         </div>
     );
