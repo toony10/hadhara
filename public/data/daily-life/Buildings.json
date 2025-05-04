@@ -97,7 +97,7 @@
             "description": "تميزت قصور الدولة الحديثة بالفخامة، مثل قصر أمنحتب الثالث في غرب طيبة الذي احتوى على قاعات استقبال واسعة وبحيرة صناعية ضخمة."
         }
     ],
-    "imageUrls":["/assets/daily-life/Buildings/مساكن.png"]
+    "imageUrls":["/assets/daily-life/Buildings/مساكن.PNG"]
 }
 ,
 {
@@ -268,7 +268,7 @@
             "description": "تقع في محافظة أسيوط، وقد تميزت بصناعة الفخار الأسود ودفن الموتى في وضع القرفصاء. كانت هذه الحضارة إحدى حلقات التطور الذي أدى إلى الحضارة المصرية القديمة."
         }
     ],
-    "imageUrls":["/assets/daily-life/Buildings/مساكن2.png"]
+    "imageUrls":["/assets/daily-life/Buildings/مساكن2.PNG"]
 }
 ,
 {
@@ -296,27 +296,27 @@
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Buildings/مساكن3.png",
-        "/assets/daily-life/Buildings/مساكن4.png",
-        "/assets/daily-life/Buildings/مساكن5.png",
-        "/assets/daily-life/Buildings/مساكن6.png"
+        "/assets/daily-life/Buildings/مساكن3.PNG",
+        "/assets/daily-life/Buildings/مساكن4.PNG",
+        "/assets/daily-life/Buildings/مساكن5.PNG",
+        "/assets/daily-life/Buildings/مساكن6.PNG"
     ]
 }
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Buildings/مساكن7.png",
-        "/assets/daily-life/Buildings/مساكن8.png",
-        "/assets/daily-life/Buildings/مساكن9.png",
-        "/assets/daily-life/Buildings/مساكن10.png"
+        "/assets/daily-life/Buildings/مساكن7.PNG",
+        "/assets/daily-life/Buildings/مساكن8.PNG",
+        "/assets/daily-life/Buildings/مساكن9.PNG",
+        "/assets/daily-life/Buildings/مساكن10.PNG"
     ]
 }
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Buildings/مساكن11.png",
-        "/assets/daily-life/Buildings/مساكن12.png",
-        "/assets/daily-life/Buildings/مساكن13.png"
+        "/assets/daily-life/Buildings/مساكن11.PNG",
+        "/assets/daily-life/Buildings/مساكن12.PNG",
+        "/assets/daily-life/Buildings/مساكن13.PNG"
     ]
 }
 ]
