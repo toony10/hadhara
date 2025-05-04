@@ -64,8 +64,8 @@
     ,
     {
         "imageUrls":[
-                    "/assets/daily-life/Clothes/ملابس2.png",
-                    "/assets/daily-life/Clothes/ملابس3.png",
+                    "/assets/daily-life/Clothes/ملابس2.PNG",
+                    "/assets/daily-life/Clothes/ملابس3.PNG",
                     "/assets/daily-life/Clothes/ملابس4.png"
         ],
         "imageDescriptions":[
@@ -301,8 +301,8 @@
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس20.png",
-        "/assets/daily-life/Clothes/ملابس21.png",
+        "/assets/daily-life/Clothes/ملابس20.PNG",
+        "/assets/daily-life/Clothes/ملابس21.PNG",
         "/assets/daily-life/Clothes/ملابس22.png"
     ],
     "imageDescriptions":[
@@ -341,7 +341,7 @@
         }
     ],
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس25.png"
+        "/assets/daily-life/Clothes/ملابس25.PNG"
     ],
     "imageDescriptions":[
         "منظر لفرقة من الجنود بلباسهم القصير - مقبرة مسحيتي - اسيوط - المتحف المصري"
@@ -374,7 +374,7 @@
         }
     ],
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس26.png"
+        "/assets/daily-life/Clothes/ملابس26.PNG"
     ],
     "imageDescriptions":[
         "خادمه امام الفرن - مقبرة خنوم وني عنخ خنوم - سقاره - الدوله القديمه"
@@ -403,15 +403,15 @@
         }
     ],
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس27.png"
+        "/assets/daily-life/Clothes/ملابس27.PNG"
     ]
 }
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس28.png",
-        "/assets/daily-life/Clothes/ملابس29.png",
-        "/assets/daily-life/Clothes/ملابس30.png"
+        "/assets/daily-life/Clothes/ملابس28.PNG",
+        "/assets/daily-life/Clothes/ملابس29.PNG",
+        "/assets/daily-life/Clothes/ملابس30.PNG"
     ],
     "imageDescriptions":[
         "الاميرة الجميلة نفرت ابات",
@@ -451,7 +451,7 @@
         }
     ],
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس34.png"
+        "/assets/daily-life/Clothes/ملابس34.PNG"
     ],
     "imageDescriptions":[
         "غطاء للرأس يتدلي منه شرائط ومحلي من الأمام بحية الكوبرا"
@@ -461,21 +461,21 @@
 {
     "imageUrls":[
         "/assets/daily-life/Clothes/ملابس35.png",
-        "/assets/daily-life/Clothes/ملابس36.png"
+        "/assets/daily-life/Clothes/ملابس36.PNG"
     ]
 }
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس37.png",
-        "/assets/daily-life/Clothes/ملابس38.png"
+        "/assets/daily-life/Clothes/ملابس37.PNG",
+        "/assets/daily-life/Clothes/ملابس38.PNG"
     ]
 }
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس39.png",
-        "/assets/daily-life/Clothes/ملابس40.png",
+        "/assets/daily-life/Clothes/ملابس39.PNG",
+        "/assets/daily-life/Clothes/ملابس40.PNG",
         "/assets/daily-life/Clothes/ملابس41.png",
         "/assets/daily-life/Clothes/ملابس42.png"
     ],
@@ -489,9 +489,9 @@
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس43.png",
-        "/assets/daily-life/Clothes/ملابس44.png",
-        "/assets/daily-life/Clothes/ملابس45.png"
+        "/assets/daily-life/Clothes/ملابس43.PNG",
+        "/assets/daily-life/Clothes/ملابس44.PNG",
+        "/assets/daily-life/Clothes/ملابس45.PNG"
     ],
     "imageDescriptions":[
         "تمثال فرعون مصري ذهبي يرتدي غطاء الرأس الملكي المهيب مع تاج الثعبان",
@@ -530,7 +530,7 @@
         }
     ],
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس46.png"
+        "/assets/daily-life/Clothes/ملابس46.PNG"
     ],
     "imageDescriptions":[
         "صندل عثر عليه بمقبرة توت عنخ امون - الأسره الثامنه عشر - الدوله الحديثه"
@@ -539,15 +539,15 @@
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس47.png",
-        "/assets/daily-life/Clothes/ملابس48.png"
+        "/assets/daily-life/Clothes/ملابس47.PNG",
+        "/assets/daily-life/Clothes/ملابس48.PNG"
     ]
 }
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس49.png",
-        "/assets/daily-life/Clothes/ملابس50.png"
+        "/assets/daily-life/Clothes/ملابس49.PNG",
+        "/assets/daily-life/Clothes/ملابس50.PNG"
     ]
 }
 ,
@@ -637,7 +637,7 @@
 {
     "imageUrls":[
     "/assets/daily-life/Clothes/ملابس70.png",
-    "/assets/daily-life/Clothes/ملابس71.png",
+    "/assets/daily-life/Clothes/ملابس71.PNG",
     "/assets/daily-life/Clothes/ملابس72.png"
     ],
     "imageDescriptions":[
@@ -933,7 +933,7 @@
     "title": "المرايا في مصر القديمة",
     "description": "كانت المرايا جزءًا هامًا من الحضارة المصرية القديمة، حيث استخدمت في الزينة والتجميل والطقوس الدينية. لم تكن مجرد أداة تعكس الصورة، بل كانت تحمل معاني رمزية ودينية عميقة، مثل الخلود والنقاء والجمال.",
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس55.png"
+        "/assets/daily-life/Clothes/ملابس55.PNG"
     ]
   },
   {
@@ -1020,8 +1020,8 @@
   ,
   {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس57.png",
-        "/assets/daily-life/Clothes/ملابس58.png"
+        "/assets/daily-life/Clothes/ملابس57.PNG",
+        "/assets/daily-life/Clothes/ملابس58.PNG"
     ],
     "imageDescriptions":[
         "غطاء مرآة الملك توت عنخ آمون",
@@ -1031,9 +1031,9 @@
   ,
     {
         "imageUrls":[
-            "/assets/daily-life/Clothes/ملابس59.png",
-            "/assets/daily-life/Clothes/ملابس60.png",
-            "/assets/daily-life/Clothes/ملابس61.png"
+            "/assets/daily-life/Clothes/ملابس59.PNG",
+            "/assets/daily-life/Clothes/ملابس60.PNG",
+            "/assets/daily-life/Clothes/ملابس61.PNG"
         ],
         "imageDescriptions":[
             " مرايا ومقابض ترجع للدوله الوسطي عصر الأنتقال الثاني",
@@ -1044,9 +1044,9 @@
     ,
     {
         "imageUrls":[
-            "/assets/daily-life/Clothes/ملابس62.png",
-            "/assets/daily-life/Clothes/ملابس63.png",
-            "/assets/daily-life/Clothes/ملابس64.png"
+            "/assets/daily-life/Clothes/ملابس62.PNG",
+            "/assets/daily-life/Clothes/ملابس63.PNG",
+            "/assets/daily-life/Clothes/ملابس64.PNG"
         ],
         "imageDescriptions":[
             "مرايا من العصر البطلمي",
@@ -1057,8 +1057,8 @@
     ,
     {
         "imageUrls":[
-            "/assets/daily-life/Clothes/ملابس65.png",
-            "/assets/daily-life/Clothes/ملابس66.png"
+            "/assets/daily-life/Clothes/ملابس65.PNG",
+            "/assets/daily-life/Clothes/ملابس66.PNG"
         ],
         "imageDescriptions":[
             "لوحة جنائزيه مرسومه من الحجر الجيري لامنمحات وزوجته أي",
