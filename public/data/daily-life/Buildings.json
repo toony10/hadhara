@@ -36,7 +36,7 @@
         },
         {
             "title": "العمارة الدينية",
-            "description": "شملت معابد المعبودات، معابد الوالدة المقدسة، المعابد الصخرية، المقاصير، وجواسق اليوبيل."
+            "description": "شملت معابد المعبودات، معابد الولاده المقدسة، المعابد الصخرية، المقاصير، وجواسق اليوبيل."
         },
         {
             "title": "العمارة الجنائزية",
@@ -55,7 +55,7 @@
         },
         {
             "title": "أرضية المنزل",
-            "description": "كانت أرضيات الغرف مغطاة بالحصير، والجد ارن مزينة بالحصير الملون، كما وُضعت صناديق خشبية لحفظ الملابس والحلي، وأُضيئت المنازل بمصابيح الزيت."
+            "description": "كانت أرضيات الغرف مغطاة بالحصير، والجدارن مزينة بالحصير الملون، كما وُضعت صناديق خشبية لحفظ الملابس والحلي، وأُضيئت المنازل بمصابيح الزيت."
         },
         {
             "title": "المحتويات الداخلية",
@@ -97,7 +97,7 @@
             "description": "تميزت قصور الدولة الحديثة بالفخامة، مثل قصر أمنحتب الثالث في غرب طيبة الذي احتوى على قاعات استقبال واسعة وبحيرة صناعية ضخمة."
         }
     ],
-    "imageUrls":["/assets/daily-life/Buildings/مساكن.PNG"]
+    "imageUrls":["/assets/daily-life/Buildings/مساكن.png"]
 }
 ,
 {
@@ -268,7 +268,7 @@
             "description": "تقع في محافظة أسيوط، وقد تميزت بصناعة الفخار الأسود ودفن الموتى في وضع القرفصاء. كانت هذه الحضارة إحدى حلقات التطور الذي أدى إلى الحضارة المصرية القديمة."
         }
     ],
-    "imageUrls":["/assets/daily-life/Buildings/مساكن2.PNG"]
+    "imageUrls":["/assets/daily-life/Buildings/مساكن2.png"]
 }
 ,
 {
@@ -296,27 +296,27 @@
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Buildings/مساكن3.PNG",
-        "/assets/daily-life/Buildings/مساكن4.PNG",
-        "/assets/daily-life/Buildings/مساكن5.PNG",
-        "/assets/daily-life/Buildings/مساكن6.PNG"
+        "/assets/daily-life/Buildings/مساكن3.png",
+        "/assets/daily-life/Buildings/مساكن4.png",
+        "/assets/daily-life/Buildings/مساكن5.png",
+        "/assets/daily-life/Buildings/مساكن6.png"
     ]
 }
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Buildings/مساكن7.PNG",
-        "/assets/daily-life/Buildings/مساكن8.PNG",
-        "/assets/daily-life/Buildings/مساكن9.PNG",
-        "/assets/daily-life/Buildings/مساكن10.PNG"
+        "/assets/daily-life/Buildings/مساكن7.png",
+        "/assets/daily-life/Buildings/مساكن8.png",
+        "/assets/daily-life/Buildings/مساكن9.png",
+        "/assets/daily-life/Buildings/مساكن10.png"
     ]
 }
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Buildings/مساكن11.PNG",
-        "/assets/daily-life/Buildings/مساكن12.PNG",
-        "/assets/daily-life/Buildings/مساكن13.PNG"
+        "/assets/daily-life/Buildings/مساكن11.png",
+        "/assets/daily-life/Buildings/مساكن12.png",
+        "/assets/daily-life/Buildings/مساكن13.png"
     ]
 }
 ]

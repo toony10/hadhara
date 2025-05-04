@@ -1,9 +1,9 @@
 
     [
-    {
-        "title": "الأزياء في مصر القديمة",
-        "description": "تميز المصري القديم بمهارته في تصميم ملابسه وأزيائه، حيث تنوعت الطرز وفقًا للطبقات الاجتماعية والمناسبات المختلفة. وقد كشفت النقوش الجدارية وبقايا الأقمشة المحفوظة عن تطور الأزياء المصرية على مر العصور، مع إدخال تعديلات مبتكرة باستخدام الأنسجة المختلفة. كما استخدم المصريون أقمشة مزركشة مستوردة، وخصصوا أنماطًا معينة لملابس الكهنة والآلهة."
-    },
+{
+    "title": "الأزياء في مصر القديمة",
+    "description": "اتسم المصري القديم بمهارة فائقة في تصميم ملابسه وزيّه، إذ تنوعت الأزياء والطرز وفقاً للاختلافات الطبقية والاجتماعية والمناسبات المختلفة. وتُعد النقوش الجدارية وبقايا الأقمشة المحفوظة من أبرز الشواهد الأثرية التي وثّقت تطور الأزياء المصرية عبر العصور. وقد أظهرت هذه الشواهد إضافة تعديلات متكررة على الملابس باستخدام أنسجة متنوعة. كما يُلاحظ لجوء المصريين إلى استيراد أقمشة مزركشة لاستخدامها في تصميم أنماط مميزة، وخصوصاً لملابس الكهنة والإلهة، مما يشير إلى بعد رمزي وديني في بعض التصاميم.\n\nصناعة النسيج في مصر القديمة\nتميّزت مصر القديمة بإنتاج الكتان الذي مثّل المادة الخام الأساسية في صناعة الأقمشة والملابس. وقد شكّل هذا الإنتاج أحد أهم ملامح الاقتصاد والصناعات الحرفية في مصر القديمة، حيث أظهر المصريون خبرة متقدمة في تقنيات غزل ونسج الألياف النباتية، مما أتاح لهم توفير أقمشة متعددة الاستخدامات والجودة."
+},
     {
         "title": "صناعة النسيج في مصر القديمة",
         "description": "اشتهرت مصر القديمة بإنتاج الكتان، الذي كان المادة الأساسية في صناعة الملابس والمنسوجات. بالإضافة إلى ذلك، استُخدمت ألياف أخرى مثل الصوف، وشعر الماعز، وألياف النخيل، وقصب الغاب. مع مرور الزمن، بدأ المصريون في التعرف على الحرير عبر التجارة، لكن صناعته واجهت قيودًا صارمة خلال العصر الروماني والبطلمي."
@@ -25,7 +25,7 @@
             }
         ],
         "imageUrls":[
-                    "/assets/daily-life/Clothes/ملابس1.PNG"
+                    "/assets/daily-life/Clothes/ملابس1.png"
         ],
         "imageDescriptions": [
             "قطعة قماش مصرية من نسيج الكتان احتفظت بمزاياها لأكثر من ٤٠٠٠ عام"
@@ -64,9 +64,9 @@
     ,
     {
         "imageUrls":[
-                    "/assets/daily-life/Clothes/ملابس2.PNG",
-                    "/assets/daily-life/Clothes/ملابس3.PNG",
-                    "/assets/daily-life/Clothes/ملابس4.PNG"
+                    "/assets/daily-life/Clothes/ملابس2.png",
+                    "/assets/daily-life/Clothes/ملابس3.png",
+                    "/assets/daily-life/Clothes/ملابس4.png"
         ],
         "imageDescriptions":[
             "",
@@ -77,9 +77,9 @@
     ,
     {
         "imageUrls":[
-                    "/assets/daily-life/Clothes/ملابس5.PNG",
-                    "/assets/daily-life/Clothes/ملابس6.PNG",
-                    "/assets/daily-life/Clothes/ملابس7.PNG"
+                    "/assets/daily-life/Clothes/ملابس5.png",
+                    "/assets/daily-life/Clothes/ملابس6.png",
+                    "/assets/daily-life/Clothes/ملابس7.png"
         ],
         "imageDescriptions":[
             "رسم يمثل النول الفرعونى وفتاتين تقومان بالنسج عليه"
@@ -108,15 +108,15 @@
             }
         ],
         "imageUrls":[
-                    "/assets/daily-life/Clothes/ملابس8.PNG"
+                    "/assets/daily-life/Clothes/ملابس8.png"
         ]
     }
     ,
     {
     "imageUrls":[
-            "/assets/daily-life/Clothes/ملابس9.PNG",
-            "/assets/daily-life/Clothes/ملابس10.PNG",
-            "/assets/daily-life/Clothes/ملابس11.PNG"
+            "/assets/daily-life/Clothes/ملابس9.png",
+            "/assets/daily-life/Clothes/ملابس10.png",
+            "/assets/daily-life/Clothes/ملابس11.png"
         ],
         "imageDescriptions":[
             "اول تيشرت مطبوع فى العالم عليه صورة النتر حتحور عمره ٣٣٠٠ سنة ومصنوع من الكتان وعثر عليه ف الاقصر",
@@ -147,7 +147,7 @@
             }
         ],
         "imageUrls":[
-                    "/assets/daily-life/Clothes/ملابس12.PNG"
+                    "/assets/daily-life/Clothes/ملابس12.png"
         ],
         "imageDescriptions":[
             "النباتات المستخدمه في الصباغه"
@@ -192,7 +192,7 @@
     ]
     ,
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس13.PNG"
+        "/assets/daily-life/Clothes/ملابس13.png"
     ],
     "imageDescriptions":[
         "فستان مطرز بالخرز يرجع لعهد الدولة القديمة ، الاسرة الرابعة ، عهد خوفو سنة 2551_2528 قبل الميلاد ،موجود فى متحف الفن الجميل ، بوسطن ."
@@ -217,7 +217,7 @@
         }
     ],
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس14.PNG"
+        "/assets/daily-life/Clothes/ملابس14.png"
     ],
     "imageDescriptions":[
         "كرسى عرش توت عنخ آمون يظهر نوعية الملابس الملكية"
@@ -226,9 +226,9 @@
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس15.PNG",
-        "/assets/daily-life/Clothes/ملابس16.PNG",
-        "/assets/daily-life/Clothes/ملابس17.PNG"
+        "/assets/daily-life/Clothes/ملابس15.png",
+        "/assets/daily-life/Clothes/ملابس16.png",
+        "/assets/daily-life/Clothes/ملابس17.png"
     ],
     "imageDescriptions":[
         "زى الكلاسيريس",
@@ -259,7 +259,7 @@
         }
     ],
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس18.PNG"
+        "/assets/daily-life/Clothes/ملابس18.png"
     ],
     "imageDescriptions":[
         "ملابس الأطفال في مصر القديمة"
@@ -292,7 +292,7 @@
         }
     ],
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس19.PNG"
+        "/assets/daily-life/Clothes/ملابس19.png"
     ],
     "imageDescriptions":[
         "لبس كان يرتديه رجال الدين فى مصر القديمة يسمى البشت او العباية .. موجود فى متحف كوبنهاجن للتاريخ فى الدنمارك."
@@ -301,9 +301,9 @@
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس20.PNG",
-        "/assets/daily-life/Clothes/ملابس21.PNG",
-        "/assets/daily-life/Clothes/ملابس22.PNG"
+        "/assets/daily-life/Clothes/ملابس20.png",
+        "/assets/daily-life/Clothes/ملابس21.png",
+        "/assets/daily-life/Clothes/ملابس22.png"
     ],
     "imageDescriptions":[
         "",
@@ -314,8 +314,8 @@
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس23.PNG",
-        "/assets/daily-life/Clothes/ملابس24.PNG"
+        "/assets/daily-life/Clothes/ملابس23.png",
+        "/assets/daily-life/Clothes/ملابس24.png"
     ],
     "imageDescriptions":[
         "جزء من لوحة على خشب الليمون تصور كاهن اثناء مراسم الدفن فى مصر يرتدى جلد النمر بلحية صغيرة مربعة وشعر مستعار مجعد من الاسرة التاسعة عشر من دير المدينة المنورة ومحفوظة فى متحف اللوفر حاليا .",
@@ -341,7 +341,7 @@
         }
     ],
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس25.PNG"
+        "/assets/daily-life/Clothes/ملابس25.png"
     ],
     "imageDescriptions":[
         "منظر لفرقة من الجنود بلباسهم القصير - مقبرة مسحيتي - اسيوط - المتحف المصري"
@@ -374,7 +374,7 @@
         }
     ],
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس26.PNG"
+        "/assets/daily-life/Clothes/ملابس26.png"
     ],
     "imageDescriptions":[
         "خادمه امام الفرن - مقبرة خنوم وني عنخ خنوم - سقاره - الدوله القديمه"
@@ -403,15 +403,15 @@
         }
     ],
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس27.PNG"
+        "/assets/daily-life/Clothes/ملابس27.png"
     ]
 }
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس28.PNG",
-        "/assets/daily-life/Clothes/ملابس29.PNG",
-        "/assets/daily-life/Clothes/ملابس30.PNG"
+        "/assets/daily-life/Clothes/ملابس28.png",
+        "/assets/daily-life/Clothes/ملابس29.png",
+        "/assets/daily-life/Clothes/ملابس30.png"
     ],
     "imageDescriptions":[
         "الاميرة الجميلة نفرت ابات",
@@ -422,9 +422,9 @@
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس31.PNG",
-        "/assets/daily-life/Clothes/ملابس32.PNG",
-        "/assets/daily-life/Clothes/ملابس33.PNG"
+        "/assets/daily-life/Clothes/ملابس31.png",
+        "/assets/daily-life/Clothes/ملابس32.png",
+        "/assets/daily-life/Clothes/ملابس33.png"
     ],
     "imageDescriptions":[
         "",
@@ -451,7 +451,7 @@
         }
     ],
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس34.PNG"
+        "/assets/daily-life/Clothes/ملابس34.png"
     ],
     "imageDescriptions":[
         "غطاء للرأس يتدلي منه شرائط ومحلي من الأمام بحية الكوبرا"
@@ -460,24 +460,24 @@
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس35.PNG",
-        "/assets/daily-life/Clothes/ملابس36.PNG"
+        "/assets/daily-life/Clothes/ملابس35.png",
+        "/assets/daily-life/Clothes/ملابس36.png"
     ]
 }
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس37.PNG",
-        "/assets/daily-life/Clothes/ملابس38.PNG"
+        "/assets/daily-life/Clothes/ملابس37.png",
+        "/assets/daily-life/Clothes/ملابس38.png"
     ]
 }
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس39.PNG",
-        "/assets/daily-life/Clothes/ملابس40.PNG",
-        "/assets/daily-life/Clothes/ملابس41.PNG",
-        "/assets/daily-life/Clothes/ملابس42.PNG"
+        "/assets/daily-life/Clothes/ملابس39.png",
+        "/assets/daily-life/Clothes/ملابس40.png",
+        "/assets/daily-life/Clothes/ملابس41.png",
+        "/assets/daily-life/Clothes/ملابس42.png"
     ],
     "imageDescriptions":[
         "الجزء العلوي من تمثال صغير لفرعون أمنمحات الثالث يرتدي نمس",
@@ -489,9 +489,9 @@
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس43.PNG",
-        "/assets/daily-life/Clothes/ملابس44.PNG",
-        "/assets/daily-life/Clothes/ملابس45.PNG"
+        "/assets/daily-life/Clothes/ملابس43.png",
+        "/assets/daily-life/Clothes/ملابس44.png",
+        "/assets/daily-life/Clothes/ملابس45.png"
     ],
     "imageDescriptions":[
         "تمثال فرعون مصري ذهبي يرتدي غطاء الرأس الملكي المهيب مع تاج الثعبان",
@@ -530,7 +530,7 @@
         }
     ],
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس46.PNG"
+        "/assets/daily-life/Clothes/ملابس46.png"
     ],
     "imageDescriptions":[
         "صندل عثر عليه بمقبرة توت عنخ امون - الأسره الثامنه عشر - الدوله الحديثه"
@@ -539,22 +539,22 @@
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس47.PNG",
-        "/assets/daily-life/Clothes/ملابس48.PNG"
+        "/assets/daily-life/Clothes/ملابس47.png",
+        "/assets/daily-life/Clothes/ملابس48.png"
     ]
 }
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس49.PNG",
-        "/assets/daily-life/Clothes/ملابس50.PNG"
+        "/assets/daily-life/Clothes/ملابس49.png",
+        "/assets/daily-life/Clothes/ملابس50.png"
     ]
 }
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس51.PNG",
-        "/assets/daily-life/Clothes/ملابس52.PNG"
+        "/assets/daily-life/Clothes/ملابس51.png",
+        "/assets/daily-life/Clothes/ملابس52.png"
     ],
     "imageDescriptions":[
         "الكعب العالى عند المصريين القدماء",
@@ -564,8 +564,8 @@
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس53.PNG",
-        "/assets/daily-life/Clothes/ملابس54.PNG"
+        "/assets/daily-life/Clothes/ملابس53.png",
+        "/assets/daily-life/Clothes/ملابس54.png"
     ],
     "imageDescriptions":[
         "من مقبرة رخمى رع بالأقصر ",
@@ -591,7 +591,7 @@
         }
     ],
     "imageUrls": [
-        "/assets/daily-life/Clothes/ملابس67.PNG"
+        "/assets/daily-life/Clothes/ملابس67.png"
     ],
     "imageDescriptions": [
         "ملعقة مساحيق تجميل على هيئة ثمار الرمان موجودة ب متحف بروكلين"
@@ -600,9 +600,9 @@
 ,
 {
 "imageUrls":[
-    "/assets/daily-life/Clothes/ملابس56.PNG",
-    "/assets/daily-life/Clothes/ملابس68.PNG",
-    "/assets/daily-life/Clothes/ملابس69.PNG"
+    "/assets/daily-life/Clothes/ملابس56.png",
+    "/assets/daily-life/Clothes/ملابس68.png",
+    "/assets/daily-life/Clothes/ملابس69.png"
 ],
 "imageDescriptions":[
     "صندوق مستحضرات التجميل المصنوع من خشب الأرز والأبنوس والفضة الموجود في متحف الفنون متروبوليتان في نيويورك",
@@ -636,9 +636,9 @@
 ,
 {
     "imageUrls":[
-    "/assets/daily-life/Clothes/ملابس70.PNG",
-    "/assets/daily-life/Clothes/ملابس71.PNG",
-    "/assets/daily-life/Clothes/ملابس72.PNG"
+    "/assets/daily-life/Clothes/ملابس70.png",
+    "/assets/daily-life/Clothes/ملابس71.png",
+    "/assets/daily-life/Clothes/ملابس72.png"
     ],
     "imageDescriptions":[
         "اقدم باروكة موجودة فى متحف المتروبليتان عمرها اكثر من ٣٩٠٠ سنة",
@@ -669,7 +669,7 @@
         }
     ],
     "imageUrls": [
-        "/assets/daily-life/Clothes/ملابس73.PNG"
+        "/assets/daily-life/Clothes/ملابس73.png"
     ],
     "imageDescriptions": [
         "أدوات تصفيف الشعر"
@@ -678,9 +678,9 @@
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس74.PNG",
-        "/assets/daily-life/Clothes/ملابس75.PNG",
-        "/assets/daily-life/Clothes/ملابس76.PNG"
+        "/assets/daily-life/Clothes/ملابس74.png",
+        "/assets/daily-life/Clothes/ملابس75.png",
+        "/assets/daily-life/Clothes/ملابس76.png"
     ],
     "imageDescriptions":[
         "مشط موجود ف المتحف المصرى ف التحرير",
@@ -711,7 +711,7 @@
         }
     ],
     "imageUrls": [
-        "/assets/daily-life/Clothes/ملابس77.PNG"
+        "/assets/daily-life/Clothes/ملابس77.png"
     ]
 }
 ,
@@ -737,7 +737,7 @@
         }
     ],
     "imageUrls": [
-        "/assets/daily-life/Clothes/ملابس78.PNG"
+        "/assets/daily-life/Clothes/ملابس78.png"
     ]
 }
 ,
@@ -748,8 +748,8 @@
 ,
 {
     "imageUrls":[
-    "/assets/daily-life/Clothes/ملابس79.PNG",
-    "/assets/daily-life/Clothes/ملابس80.PNG"
+    "/assets/daily-life/Clothes/ملابس79.png",
+    "/assets/daily-life/Clothes/ملابس80.png"
     ]
 }
 ,
@@ -843,8 +843,8 @@
 ,
 {
     "imageUrls":[
-    "/assets/daily-life/Clothes/ملابس81.PNG",
-    "/assets/daily-life/Clothes/ملابس82.PNG"
+    "/assets/daily-life/Clothes/ملابس81.png",
+    "/assets/daily-life/Clothes/ملابس82.png"
     ],
     "imageDescriptions":[
         "سوار الملكة امانى ريناس",
@@ -854,9 +854,9 @@
 ,
 {
     "imageUrls":[
-    "/assets/daily-life/Clothes/ملابس83.PNG",
-    "/assets/daily-life/Clothes/ملابس84.PNG",
-    "/assets/daily-life/Clothes/ملابس85.PNG"
+    "/assets/daily-life/Clothes/ملابس83.png",
+    "/assets/daily-life/Clothes/ملابس84.png",
+    "/assets/daily-life/Clothes/ملابس85.png"
     ],
     "imageDescriptions":[
         "",
@@ -867,9 +867,9 @@
 ,
 {
     "imageUrls":[
-    "/assets/daily-life/Clothes/ملابس86.PNG",
-    "/assets/daily-life/Clothes/ملابس87.PNG",
-    "/assets/daily-life/Clothes/ملابس88.PNG"
+    "/assets/daily-life/Clothes/ملابس86.png",
+    "/assets/daily-life/Clothes/ملابس87.png",
+    "/assets/daily-life/Clothes/ملابس88.png"
     ],
     "imageDescriptions":[
         "قلادة تحمل اسم العرش للملك سنوسرت الثانى وتتكون من الذهب ، العقيق ، الازورد ، الفيروز تم العثور عليها من بين مجوهرات الاميرة سات حور فى اللاهون",
@@ -880,10 +880,10 @@
 ,
 {
     "imageUrls":[
-    "/assets/daily-life/Clothes/ملابس89.PNG",
-    "/assets/daily-life/Clothes/ملابس90.PNG",
-    "/assets/daily-life/Clothes/ملابس91.PNG",
-    "/assets/daily-life/Clothes/ملابس92.PNG"
+    "/assets/daily-life/Clothes/ملابس89.png",
+    "/assets/daily-life/Clothes/ملابس90.png",
+    "/assets/daily-life/Clothes/ملابس91.png",
+    "/assets/daily-life/Clothes/ملابس92.png"
     ],
     "imageDescriptions":[
         "خاتم للملك حور محب يعود الى الدولة الحديثة اسرة ١٨ .",
@@ -895,9 +895,9 @@
 ,
 {
     "imageUrls":[
-    "/assets/daily-life/Clothes/ملابس93.PNG",
-    "/assets/daily-life/Clothes/ملابس94.PNG",
-    "/assets/daily-life/Clothes/ملابس95.PNG"
+    "/assets/daily-life/Clothes/ملابس93.png",
+    "/assets/daily-life/Clothes/ملابس94.png",
+    "/assets/daily-life/Clothes/ملابس95.png"
     ],
     "imageDescriptions":[
         "خاتم جميلة الجميلات ( نفرت ايرى مرى موت ) المعروفة بنفرتارى زوجة رمسيس الثانى . ويعرض حاليا فى متخف أغسطس كستنز فى هانوفر المانيا .",
@@ -933,7 +933,7 @@
     "title": "المرايا في مصر القديمة",
     "description": "كانت المرايا جزءًا هامًا من الحضارة المصرية القديمة، حيث استخدمت في الزينة والتجميل والطقوس الدينية. لم تكن مجرد أداة تعكس الصورة، بل كانت تحمل معاني رمزية ودينية عميقة، مثل الخلود والنقاء والجمال.",
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس55.PNG"
+        "/assets/daily-life/Clothes/ملابس55.png"
     ]
   },
   {
@@ -1020,8 +1020,8 @@
   ,
   {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس57.PNG",
-        "/assets/daily-life/Clothes/ملابس58.PNG"
+        "/assets/daily-life/Clothes/ملابس57.png",
+        "/assets/daily-life/Clothes/ملابس58.png"
     ],
     "imageDescriptions":[
         "غطاء مرآة الملك توت عنخ آمون",
@@ -1031,9 +1031,9 @@
   ,
     {
         "imageUrls":[
-            "/assets/daily-life/Clothes/ملابس59.PNG",
-            "/assets/daily-life/Clothes/ملابس60.PNG",
-            "/assets/daily-life/Clothes/ملابس61.PNG"
+            "/assets/daily-life/Clothes/ملابس59.png",
+            "/assets/daily-life/Clothes/ملابس60.png",
+            "/assets/daily-life/Clothes/ملابس61.png"
         ],
         "imageDescriptions":[
             " مرايا ومقابض ترجع للدوله الوسطي عصر الأنتقال الثاني",
@@ -1044,9 +1044,9 @@
     ,
     {
         "imageUrls":[
-            "/assets/daily-life/Clothes/ملابس62.PNG",
-            "/assets/daily-life/Clothes/ملابس63.PNG",
-            "/assets/daily-life/Clothes/ملابس64.PNG"
+            "/assets/daily-life/Clothes/ملابس62.png",
+            "/assets/daily-life/Clothes/ملابس63.png",
+            "/assets/daily-life/Clothes/ملابس64.png"
         ],
         "imageDescriptions":[
             "مرايا من العصر البطلمي",
@@ -1057,8 +1057,8 @@
     ,
     {
         "imageUrls":[
-            "/assets/daily-life/Clothes/ملابس65.PNG",
-            "/assets/daily-life/Clothes/ملابس66.PNG"
+            "/assets/daily-life/Clothes/ملابس65.png",
+            "/assets/daily-life/Clothes/ملابس66.png"
         ],
         "imageDescriptions":[
             "لوحة جنائزيه مرسومه من الحجر الجيري لامنمحات وزوجته أي",
@@ -1070,7 +1070,7 @@
     "title": "العطور في مصر القديمة",
     "description": "لعبت العطور دورًا أساسيًا في حياة المصريين القدماء، حيث ارتبط استخدامها بالمعتقدات الدينية، الجمال، والطقوس الجنائزية. استخدم المصريون القدماء الزيوت العطرية والبخور في المعابد، وارتبطت العطور بالملوك والكهنة قبل أن تصبح متاحة لعامة الشعب مع مرور الوقت.",
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس96.PNG"
+        "/assets/daily-life/Clothes/ملابس96.png"
     ],
     "imageDescriptions":[
         "عطر الخلود عند الفراعنه"
@@ -1168,7 +1168,7 @@
         }
     ],
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس97.PNG"
+        "/assets/daily-life/Clothes/ملابس97.png"
     ],
     "imageDescriptions":[
         "لوحة الزيوت السبعة المقدسة"
@@ -1196,9 +1196,9 @@
 ,
 {
     "imageUrls":[
-        "/assets/daily-life/Clothes/ملابس98.PNG",
-        "/assets/daily-life/Clothes/ملابس99.PNG",
-        "/assets/daily-life/Clothes/ملابس100.PNG"
+        "/assets/daily-life/Clothes/ملابس98.png",
+        "/assets/daily-life/Clothes/ملابس99.png",
+        "/assets/daily-life/Clothes/ملابس100.png"
     ]
 }
 ]

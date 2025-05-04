@@ -69,8 +69,8 @@
     }
   ],
   "imageUrls": [
-    "/assets/daily-life/Furniture/شجرة-الجميز.PNG",
-    "/assets/daily-life/Furniture/شجرة-السنط.PNG"
+    "/assets/daily-life/Furniture/شجرة-الجميز.png",
+    "/assets/daily-life/Furniture/شجرة-السنط.png"
   ],
   "imageDescriptions": [
     "شجرة الجميز",
@@ -107,7 +107,7 @@
       "description": "استورد المصريون أنواعه المختلفة من سوريا وآسيا الصغرى. استخدم في صناعة التوابيت ونجارة العمارة، وعُثر على قطع منه تعود لعصر ما قبل الأسرات."
     }
   ],
-  "imageUrls": ["/assets/daily-life/Furniture/شجرة-الأرز.PNG"],
+  "imageUrls": ["/assets/daily-life/Furniture/شجرة-الأرز.png"],
   "imageDescriptions": ["شجرة الأرز"]
 }
 ,
@@ -293,11 +293,11 @@
     }
   ],
   "imageUrls": [
-    "/assets/daily-life/Furniture/قواديم.PNG",
-    "/assets/daily-life/Furniture/مطارق-خشبية-ومنشار.PNG",
-    "/assets/daily-life/Furniture/2قواديم.PNG",
-    "/assets/daily-life/Furniture/صقل-سرير.PNG",
-    "/assets/daily-life/Furniture/تشكيل-بالقادوم.PNG"
+    "/assets/daily-life/Furniture/قواديم.png",
+    "/assets/daily-life/Furniture/مطارق-خشبية-ومنشار.png",
+    "/assets/daily-life/Furniture/2قواديم.png",
+    "/assets/daily-life/Furniture/صقل-سرير.png",
+    "/assets/daily-life/Furniture/تشكيل-بالقادوم.png"
   ],
   "imageDescriptions": [
     "قواديم",
@@ -373,14 +373,14 @@
     }
   ],
   "imageUrls": [
-    "/assets/daily-life/Furniture/أثاث-دنيوي.PNG"
+    "/assets/daily-life/Furniture/أثاث-دنيوي.png"
   ]
 }
 ,
 {
   "imageUrls": [
-    "/assets/daily-life/Furniture/سرير1.PNG",
-    "/assets/daily-life/Furniture/سرير2.PNG"
+    "/assets/daily-life/Furniture/سرير1.png",
+    "/assets/daily-life/Furniture/سرير2.png"
   ],
   "imageDescriptions": [
     "سرير مفتوح",
@@ -414,7 +414,7 @@
     }
   ],
   "imageUrls": [
-    "/assets/daily-life/Furniture/مساند.PNG"
+    "/assets/daily-life/Furniture/مساند.png"
   ]
 }
 ,
@@ -472,15 +472,15 @@
     }
   ],
   "imageUrls": [
-    "/assets/daily-life/Furniture/كراسي.PNG"
+    "/assets/daily-life/Furniture/كراسي.png"
   ]
 }
 ,
 {
   "imageUrls": [
-    "/assets/daily-life/Furniture/كراسي1.PNG",
-    "/assets/daily-life/Furniture/كراسي2.PNG",
-    "/assets/daily-life/Furniture/كراسي3.PNG"
+    "/assets/daily-life/Furniture/كراسي1.png",
+    "/assets/daily-life/Furniture/كراسي2.png",
+    "/assets/daily-life/Furniture/كراسي3.png"
   ]
 }
 ,
@@ -557,15 +557,15 @@
     }
   ],
   "imageUrls": [
-    "/assets/daily-life/Furniture/اريكه.PNG"
+    "/assets/daily-life/Furniture/اريكه.png"
   ]
 }
 ,
 {
   "imageUrls": [
-    "/assets/daily-life/Furniture/اريكه1.PNG",
-    "/assets/daily-life/Furniture/اريكه2.PNG",
-    "/assets/daily-life/Furniture/اريكه3.PNG"
+    "/assets/daily-life/Furniture/اريكه1.png",
+    "/assets/daily-life/Furniture/اريكه2.png",
+    "/assets/daily-life/Furniture/اريكه3.png"
   ]
 },
 {
@@ -610,8 +610,8 @@
     }
   ],
   "imageUrls": [
-    "/assets/daily-life/Furniture/منضد.PNG",
-    "/assets/daily-life/Furniture/منضد1.PNG"
+    "/assets/daily-life/Furniture/منضد.png",
+    "/assets/daily-life/Furniture/منضد1.png"
   ]
 }
 ,
@@ -668,13 +668,13 @@
     }
   ],
   "imageUrls": [
-    "/assets/daily-life/Furniture/خزان.PNG"
+    "/assets/daily-life/Furniture/خزان.png"
   ]
 },
 {
   "imageUrls": [
-    "/assets/daily-life/Furniture/صندوق1.PNG",
-    "/assets/daily-life/Furniture/صندوق2.PNG" 
+    "/assets/daily-life/Furniture/صندوق1.png",
+    "/assets/daily-life/Furniture/صندوق2.png" 
    ]
 }
 ]
