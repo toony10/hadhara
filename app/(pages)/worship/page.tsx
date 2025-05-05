@@ -19,7 +19,7 @@ const subTopics = [
     { title: 'الألهه', component: <Gods /> },
     { title: 'الأساطير', component: <Myths /> },
     { title: 'الأعياد', component: <Holidays /> },
-    { title: 'المعابد', component: <Temples /> },
+    { title: 'المعابد والكهنه', component: <Temples /> },
     { title: 'التمائم', component: <Talismans /> },
     { title: 'الكتب الدينية', component: <Books /> }
 ];
