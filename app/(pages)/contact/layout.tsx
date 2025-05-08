@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useState } from "react";
-import Footer from "../../commponents/Footer";
 import Link from "next/link";
 import Image from "next/image";
 
