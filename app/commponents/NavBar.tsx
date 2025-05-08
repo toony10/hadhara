@@ -59,7 +59,7 @@ function NavBar() {
                                 onMouseLeave={ () => setMenuOpen(null) }
                             >
                                 <Link href={ item.link }>
-                                    <button className="zhover:text-yellow-500 text-xl font-bold flex items-center space-x-2">
+                                    <button className="hover:text-yellow-500 text-xl font-bold flex items-center space-x-2">
                                         <span>{ item.title }</span>
                                     </button>
                                 </Link>
