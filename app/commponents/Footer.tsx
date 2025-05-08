@@ -15,15 +15,22 @@ function Footer() {
                     </div>
 
                     <div className="flex space-x-6">
-                        <Link href="/">
+                        <Link href="/" className="hover:text-yellow-500 transition-all">
                             الرئيسية
                         </Link>
-                        <Link href="/contact" className="hover:text-yellow-500 transition-all">تواصل معنا</Link>
+                        <Link href="/contact" className="hover:text-yellow-500 transition-all"
+                        >
+                            تواصل معنا
+                        </Link>
+                        <Link href="/team" className="hover:text-yellow-500 transition-all"
+                        >
+                            فريق العمل
+                        </Link>
                     </div>
                 </div>
 
                 <div className="mt-6 flex justify-center space-x-6">
-                    <a href="https://www.facebook.com" className="text-white hover:text-yellow-500 transition-all">
+                    <a href="https://www.facebook.com/share/16SeNV8iLb/" className="text-white hover:text-yellow-500 transition-all">
                         <FaFacebook size={ 24 } />
                     </a>
                     <a href="https://www.instagram.com" className="text-white hover:text-yellow-500 transition-all">
