@@ -13,7 +13,6 @@ import MedicineMagic from '../../commponents/mummification/MedicineMagic';
 import Animal from '../../commponents/mummification/Animal';
 import Museum from '../../commponents/mummification/Museum';
 import Rituals from '../../commponents/mummification/Rituals';
-import Development from '../../commponents/mummification/Development';
 
 import { motion } from 'framer-motion';
 import { FaArrowUp, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
