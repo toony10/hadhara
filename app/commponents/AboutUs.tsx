@@ -145,13 +145,16 @@ export default function AboutUs() {
                         </p>
                     </motion.div>
                 </div>
-                <motion.div>
+                <motion.div className='flex flex-col w-full items-center justify-center'>
                     <button
                         onClick={ () => setIsPopupOpen(true) }
                         className="bg-[#d4af37] text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-blue-800 transition-all duration-300 transform hover:scale-105 mt-10"
                     >
                         ابدأ رحلتك معنا
                     </button>
+                    <Link href='/team' className='text-yellow-500 mt-7 hover:underline font-bold text-lg font-sans'>
+                        فريق العمل
+                    </Link>
                 </motion.div>
 
                 {/* Popup */ }

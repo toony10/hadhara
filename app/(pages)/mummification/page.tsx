@@ -23,7 +23,6 @@ const subTopics = [
     { title: 'الهدف منه', component: <Purpose /> },
     { title: 'المواد المستخدمه', component: <Materials /> },
     { title: 'الأثاث الجنائزي', component: <Furniture /> },
-    { title: 'تطور التحنيط', component: <Development /> },
     { title: 'الطرق والخطوات الأساسيه', component: <Steps /> },
     { title: 'الألهه المرتبطه بالتحنيط', component: <Gods /> },
     { title: 'دور الطب والسحر', component: <MedicineMagic /> },

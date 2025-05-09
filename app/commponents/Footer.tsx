@@ -1,17 +1,21 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 import React from 'react';
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { IoMdMail } from "react-icons/io";
 
 function Footer() {
     return (
         <footer className="bg-gray-900 text-white py-8">
             <div className="container mx-auto px-6">
                 <div className="flex justify-between items-center">
-                    <div>
-                        <h1 className="text-4xl font-bold text-yellow-500">حضارة</h1>
-                        <p className="mt-2 text-sm text-gray-300">اكتشف عالم الحضارة المصرية القديمة</p>
+                    <div className='flex flex-col items-center mt-2'>
+                        <Link href='./'>
+                            <Image src='/logo.png' width={ 110 } height={ 110 } alt='logo' />
+                        </Link>
+                        <p className="mt-2 text-sm text-gray-300 text-center">اكتشف عالم الحضارة المصرية القديمة</p>
                     </div>
 
                     <div className="flex space-x-6">
@@ -33,11 +37,11 @@ function Footer() {
                     <a href="https://www.facebook.com/share/16SeNV8iLb/" className="text-white hover:text-yellow-500 transition-all">
                         <FaFacebook size={ 24 } />
                     </a>
-                    <a href="https://www.instagram.com" className="text-white hover:text-yellow-500 transition-all">
+                    <a href="https://www.instagram.com/had_arah/profilecard/?igsh=MW8ydTFubHZ3djl4bw==" className="text-white hover:text-yellow-500 transition-all">
                         <FaInstagram size={ 24 } />
                     </a>
-                    <a href="https://www.twitter.com" className="text-white hover:text-yellow-500 transition-all">
-                        <FaTwitter size={ 24 } />
+                    <a href="mailto:hadarah81@gmail.com" className="text-white hover:text-yellow-500 transition-all">
+                        <IoMdMail size={ 24 } />
                     </a>
                 </div>
 
