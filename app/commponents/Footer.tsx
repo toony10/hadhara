@@ -8,7 +8,7 @@ import { IoMdMail } from "react-icons/io";
 
 function Footer() {
     return (
-        <footer className="bg-gray-900 text-white py-8">
+        <footer className="bg-gray-900 text-white py-16">
             <div className="container mx-auto px-6">
                 <div className="flex justify-between items-center">
                     <div className='flex flex-col items-center mt-2'>
