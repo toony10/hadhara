@@ -152,7 +152,7 @@ export default function AboutUs() {
                     >
                         ابدأ رحلتك معنا
                     </button>
-                    <Link href='/team' className='text-yellow-500 mt-7 hover:underline font-bold text-lg font-sans'>
+                    <Link href='/team' className='text-yellow-500 hover:underline font-bold text-lg font-sans'>
                         فريق العمل
                     </Link>
                 </motion.div>
