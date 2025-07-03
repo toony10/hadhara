@@ -108,7 +108,7 @@ export default function AboutUs() {
                         transition={ { duration: 0.8 } }
                         viewport={ { once: true } }
                     >
-                        <Image
+                        <Image unoptimized
                             width={ 100 }
                             height={ 100 }
                             sizes="100vw"
@@ -130,7 +130,7 @@ export default function AboutUs() {
                         transition={ { duration: 0.8, delay: 0.2 } }
                         viewport={ { once: true } }
                     >
-                        <Image
+                        <Image unoptimized
                             width={ 100 }
                             height={ 100 }
                             sizes="100vw"
@@ -177,7 +177,7 @@ export default function AboutUs() {
                             >
                                 {/* Image */ }
                                 <div className="relative w-full h-full">
-                                    <Image
+                                    <Image unoptimized
                                         width={ 100 }
                                         height={ 100 }
                                         sizes="100vw"

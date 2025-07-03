@@ -22,7 +22,7 @@ function ContentBlock({ title, description, listItems, imageUrls, imageDescripti
     return (
         <motion.div
             className={ `w-full flex flex-col lg:flex-row items-center gap-12 py-10 px-10
-                ${reverse ? "lg:flex-row-reverse" : ""} 
+                ${ reverse ? "lg:flex-row-reverse" : "" } 
                 odd:bg-gray-50 even:bg-white transition-all duration-500`}
             initial={ { opacity: 0, y: 50 } }
             whileInView={ { opacity: 1, y: 0 } }
@@ -31,7 +31,7 @@ function ContentBlock({ title, description, listItems, imageUrls, imageDescripti
         >
             {/* عرض النصوص فقط إذا كانت موجودة */ }
             { hasTextContent && (
-                <div className={ `text-right ${hasImages ? "lg:w-1/2" : "w-full"}` }>
+                <div className={ `text-right ${ hasImages ? "lg:w-1/2" : "w-full" }` }>
                     <h2 className="text-3xl font-bold text-gray-900 mb-4">{ title }</h2>
                     { description && <p className="text-lg text-gray-700 mb-4">{ description }</p> }
 
@@ -52,15 +52,15 @@ function ContentBlock({ title, description, listItems, imageUrls, imageDescripti
             {/* عرض الصور فقط في حالة عدم وجود نصوص */ }
             { hasImages && (
                 <div
-                    className={ `w-full ${hasMultipleImages ? "lg:flex-row lg:space-x-4" : ""} 
-                    ${hasTextContent ? "lg:w-1/2" : "w-full"} flex flex-col lg:flex-row justify-center items-center space-y-5` }
+                    className={ `w-full ${ hasMultipleImages ? "lg:flex-row lg:space-x-4" : "" } 
+                    ${ hasTextContent ? "lg:w-1/2" : "w-full" } flex flex-col lg:flex-row justify-center items-center space-y-5` }
                 >
                     { imageUrls.map((imageUrl, index) => (
                         <div
                             key={ index }
-                            className={ `${hasMultipleImages ? "lg:w-1/2" : "w-full"} items-center` }
+                            className={ `${ hasMultipleImages ? "lg:w-1/2" : "w-full" } items-center` }
                         >
-                            <ImageViewer imageUrl={ imageUrl } caption={ imageDescriptions?.[index] || "" } />
+                            <Image unoptimizedViewer imageUrl={ imageUrl } caption={ imageDescriptions?.[index] || "" } />
                         </div>
                     )) }
                 </div>
