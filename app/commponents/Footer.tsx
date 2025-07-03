@@ -13,7 +13,7 @@ function Footer() {
                 <div className="flex justify-between items-center">
                     <div className='flex flex-col items-center mt-2'>
                         <Link href='./'>
-                            <Image src='/logo.png' width={ 110 } height={ 110 } alt='logo' />
+                            <Image unoptimized src='/logo.png' width={ 110 } height={ 110 } alt='logo' />
                         </Link>
                         <p className="mt-2 text-sm text-gray-300 text-center">اكتشف عالم الحضارة المصرية القديمة</p>
                     </div>

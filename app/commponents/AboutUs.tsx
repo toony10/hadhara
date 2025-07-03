@@ -109,6 +109,7 @@ export default function AboutUs() {
                         viewport={ { once: true } }
                     >
                         <Image
+                            unoptimized
                             width={ 100 }
                             height={ 100 }
                             sizes="100vw"
@@ -131,6 +132,7 @@ export default function AboutUs() {
                         viewport={ { once: true } }
                     >
                         <Image
+                            unoptimized
                             width={ 100 }
                             height={ 100 }
                             sizes="100vw"
@@ -178,6 +180,7 @@ export default function AboutUs() {
                                 {/* Image */ }
                                 <div className="relative w-full h-full">
                                     <Image
+                                        unoptimized
                                         width={ 100 }
                                         height={ 100 }
                                         sizes="100vw"
