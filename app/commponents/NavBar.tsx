@@ -40,12 +40,12 @@ function NavBar() {
     return (
         <div>
             {/* Navigation Bar */ }
-            <nav className={ `fixed h-32 top-0 w-full z-20 transition-colors duration-300 ${ isScrolled ? 'bg-white bg-opacity-100 shadow-lg text-gray-800' : 'bg-transparent' }` }>
+            <nav className={ `fixed h-32 top-0 w-full z-20 transition-colors duration-300 ${isScrolled ? 'bg-white bg-opacity-100 shadow-lg text-gray-800' : 'bg-transparent'}` }>
                 <div className="container mx-auto px-4 py-4 flex justify-between items-center">
                     {/* Logo */ }
                     <div className="text-2xl font-bold">
                         <Link href='./'>
-                            <Image unoptimized src='/logo.png' width={ 110 } height={ 110 } alt='logo' />
+                            <Image src='/logo.png' width={ 110 } height={ 110 } alt='logo' />
                         </Link>
                     </div>
 
@@ -65,7 +65,7 @@ function NavBar() {
                                 </Link>
                                 {/* Dropdown Menu */ }
                                 <ul
-                                    className={ `absolute right-0 mt-2 bg-gray-800 text-white rounded shadow-lg z-10 transform transition-all duration-300 origin-top ${ menuOpen === index ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0' }` }
+                                    className={ `absolute right-0 mt-2 bg-gray-800 text-white rounded shadow-lg z-10 transform transition-all duration-300 origin-top ${menuOpen === index ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'}` }
                                 >
                                     { item.subItems.map((subItem, subIndex) => (
                                         <span key={ subIndex }>

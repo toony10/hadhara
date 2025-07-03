@@ -8,7 +8,7 @@ const ArabicFont = Aref_Ruqaa({
 
 export default function team() {
     return (
-        <div className={ `min-h-screen bg-gradient-to-b from-gray-800 to-yellow-100 text-white mx-auto px-6 py-20 ${ ArabicFont.className }` }>
+        <div className={ `min-h-screen bg-gradient-to-b from-gray-800 to-yellow-100 text-white mx-auto px-6 py-20 ${ArabicFont.className}` }>
             <div className="flex flex-col items-center justify-center py-10">
                 <h1 className="text-4xl font-bold text-center mb-8">إهداء</h1>
                 <p className="text-3xl max-w-2xl text-center mb-12 leading-relaxed tracking-wide">
@@ -26,7 +26,7 @@ export default function team() {
                 </p>
 
                 <div className="relative w-full max-w-6xl mb-16">
-                    <Image unoptimized
+                    <Image
                         src="/assets/team.PNG"
                         alt="فريق العمل"
                         width={ 1500 }

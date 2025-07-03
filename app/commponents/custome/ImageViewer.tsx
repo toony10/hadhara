@@ -14,7 +14,7 @@ function ImageViewer({ imageUrl, caption }: ImageViewerProps) {
         <>
             {/* الصورة المصغرة مع العنوان */ }
             <div className="flex flex-col items-center text-center cursor-pointer">
-                <Image unoptimized
+                <Image
                     src={ imageUrl }
                     alt={ caption || "صورة" }
                     width={ 400 }
@@ -45,7 +45,7 @@ function ImageViewer({ imageUrl, caption }: ImageViewerProps) {
                             exit={ { scale: 0.5, opacity: 0 } }
                             transition={ { duration: 0.3 } }
                         >
-                            <Image unoptimized
+                            <Image
                                 src={ imageUrl }
                                 alt={ caption || "صورة مكبرة" }
                                 width={ 1200 }
